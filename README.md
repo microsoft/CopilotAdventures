@@ -8,7 +8,7 @@ Welcome to Copilot Adventures! This series of coding adventures is all about lea
 
 **Visual Studio and Copilot**
 
-<a href="https://developer.microsoft.com/en-us/reactor/events/21122/?wt.mc_id=eventspg_21031_webpage_reactor" target="_blank">
+<a href="https://developer.microsoft.com/en-us/reactor/events/21122/?wt.mc_id=eventspg_21122_webpage_reactor" target="_blank">
     <img src="./Images/copilot-adventures-banner-robot.png" style="width: 830px" />
 </a>
 <br /><br />
