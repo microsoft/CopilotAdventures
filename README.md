@@ -4,15 +4,16 @@
 
 Welcome to Copilot Adventures! This series of coding adventures is all about learning new concepts and languages by using [GitHub Copilot](https://github.com/features/copilot) to help you write code. Let's get started!
 
-**Upcoming Live Streams!**
+### Upcoming Livestreams!
 
-Visual Studio and Copilot:
+**Visual Studio and Copilot**
 
 <a href="https://developer.microsoft.com/en-us/reactor/events/21122/?wt.mc_id=eventspg_21031_webpage_reactor" target="_blank">
     <img src="./Images/copilot-adventures-banner-robot.png" style="width: 830px" />
 </a>
+<br /><br />
 
-VS Code and Copilot:
+**VS Code and Copilot**
 
 <a href="https://developer.microsoft.com/en-us/reactor/events/21031/?wt.mc_id=eventspg_21031_webpage_reactor" target="_blank">
     <img src="./Images/copilot-adventures-banner-castle.png" style="width: 830px" />
