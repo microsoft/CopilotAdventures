@@ -1,0 +1,13 @@
+{
+    "name": "CopilotAdventures",
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",
+                "gitHub.copilot-chat",
+                "gitHub.vscode-pull-request-github"
+            ]
+        }
+    }
+}
