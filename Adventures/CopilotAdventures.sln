@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{0CA24526-29D6-41AC-9E3E-07731CEBC4F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopilotAdventures", "CSharp\CopilotAdventures\CopilotAdventures.csproj", "{05EAC323-A091-4EFD-9B16-CE0D9CCD0562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adventures", "Adventures", "{F3C03A20-4745-4271-B73B-84B5936D30A6}"
+	ProjectSection(SolutionItems) = preProject
+		StartHere.md = StartHere.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Beginner", "1-Beginner", "{6167ADA6-CB6F-4E98-B898-051D3DE61B26}"
+	ProjectSection(SolutionItems) = preProject
+		1-Beginner\The-Clockwork-Town-of-Tempora.md = 1-Beginner\The-Clockwork-Town-of-Tempora.md
+		1-Beginner\The-Magical-Forest-of-Algora.md = 1-Beginner\The-Magical-Forest-of-Algora.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Intermediate", "2-Intermediate", "{93A53502-FCDE-4FB2-9052-BC7E4EA6A9B2}"
+	ProjectSection(SolutionItems) = preProject
+		2-Intermediate\The-Celestial-Alignment-of-Lumoria.md = 2-Intermediate\The-Celestial-Alignment-of-Lumoria.md
+		2-Intermediate\The-Legendary-Duel-of-Stonevale.md = 2-Intermediate\The-Legendary-Duel-of-Stonevale.md
+		2-Intermediate\The-Scrolls-of-Eldoria.md = 2-Intermediate\The-Scrolls-of-Eldoria.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Advanced", "3-Advanced", "{795E284F-D39B-4D7F-8778-89621FA73A08}"
+	ProjectSection(SolutionItems) = preProject
+		3-Advanced\The-Gridlock-Arena-of-Mythos.md = 3-Advanced\The-Gridlock-Arena-of-Mythos.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05EAC323-A091-4EFD-9B16-CE0D9CCD0562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EAC323-A091-4EFD-9B16-CE0D9CCD0562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EAC323-A091-4EFD-9B16-CE0D9CCD0562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EAC323-A091-4EFD-9B16-CE0D9CCD0562}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{05EAC323-A091-4EFD-9B16-CE0D9CCD0562} = {0CA24526-29D6-41AC-9E3E-07731CEBC4F5}
+		{6167ADA6-CB6F-4E98-B898-051D3DE61B26} = {F3C03A20-4745-4271-B73B-84B5936D30A6}
+		{93A53502-FCDE-4FB2-9052-BC7E4EA6A9B2} = {F3C03A20-4745-4271-B73B-84B5936D30A6}
+		{795E284F-D39B-4D7F-8778-89621FA73A08} = {F3C03A20-4745-4271-B73B-84B5936D30A6}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+﻿Console.WriteLine("Welcome to GitHub Copilot Adventures. Let's go exploring.");
