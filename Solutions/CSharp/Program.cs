@@ -3,7 +3,7 @@ public class Program
     public static void Main(string[] args)
     {
 
-        var adventure = args.FirstOrDefault()?.ToLower();
+        var adventure = args?.FirstOrDefault()?.ToLower();
         if (string.IsNullOrWhiteSpace(adventure))
         {
             Console.WriteLine("Please specify which logic to run: Sample names include: lumoria, algora, stonevale, temporal, mythos.");
