@@ -30,5 +30,5 @@ async function fetchAndDecipherScroll(url) {
 }
 
 // URL to the Eldorian Web of Knowledge (Replace with actual URL)
-const url = 'https://raw.githubusercontent.com/DanWahlin/CopilotAdventures/main/Data/scrolls.txt';
+const url = 'https://raw.githubusercontent.com/microsoft/CopilotAdventures/main/Data/scrolls.txt';
 fetchAndDecipherScroll(url);

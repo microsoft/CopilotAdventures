@@ -22,5 +22,5 @@ def fetch_and_decipher_scroll(url):
         print(f'An error occurred: {err}')
 
 # URL to the Eldorian Web of Knowledge (Replace with actual URL)
-url = 'https://raw.githubusercontent.com/DanWahlin/CopilotAdventures/main/Data/scrolls.txt'
+url = 'https://raw.githubusercontent.com/microsoft/CopilotAdventures/main/Data/scrolls.txt'
 fetch_and_decipher_scroll(url)

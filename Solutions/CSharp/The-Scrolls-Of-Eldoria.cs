@@ -32,7 +32,7 @@ public class Eldoria
 
     public static void Run()
     {
-        string url = "https://raw.githubusercontent.com/DanWahlin/CopilotAdventures/main/Data/scrolls.txt";
+        string url = "https://raw.githubusercontent.com/microsoft/CopilotAdventures/main/Data/scrolls.txt";
         FetchAndDecipherScroll(url).Wait();
     }
 }

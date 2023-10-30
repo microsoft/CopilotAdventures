@@ -29,14 +29,14 @@ Welcome to Copilot Adventures! This series of coding adventures is all about lea
 
 To get started, enter the "adventure arena" by clicking the button below. This will create a GitHub Codespace that you can work in. Once it loads select the **Create codespace** button.
 
-[![Enter Adventure Arena](https://img.shields.io/static/v1?style=for-the-badge&label=Enter+Adventure+Arena&message=Open&color=brightgreen&logo=github)](https://codespaces.new/DanWahlin/CopilotAdventures)
+[![Enter Adventure Arena](https://img.shields.io/static/v1?style=for-the-badge&label=Enter+Adventure+Arena&message=Open&color=brightgreen&logo=github)](https://codespaces.new/microsoft/CopilotAdventures)
 
 **NOTE:** You can use 60 hours of GitHub Codespaces [for free](https://github.com/features/codespaces#pricing) each month.
 
 If you'd prefer, you can clone the repo and run locally:
 
 ```bash
-git clone https://github.com/danwahlin/copilotadventures
+git clone https://github.com/microsoft/copilotadventures
 ```
 
 ### 2. Choose an Adventure
@@ -74,7 +74,7 @@ Read Your Copilot Adventure description, the high-Level steps to perform, and th
 Perform the following steps:
 
 - Publish your adventure solution to a GitHub repo. 
-- Visit https://github.com/DanWahlin/CopilotAdventures/issues and select `New Issue`.
+- Visit https://github.com/microsoft/CopilotAdventures/issues and select `New Issue`.
 - Use the following naming convention for the issue title. 
 
     ```
