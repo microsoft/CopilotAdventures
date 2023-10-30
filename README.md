@@ -64,7 +64,7 @@ Once you've completed the warmup adventure, choose another one from the list bel
 
 ### 3. Start Coding
 
-Read Your Copilot Adventure description, the high-Level steps to perform, and the GitHub Copilot hints to help you write your code.
+Read Your Copilot Adventure description, the high-Level tasks to perform, and the GitHub Copilot hints to help you write your code.
 
 - Use [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) and/or [GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat) to help you write the code for the adventure. You can use any language you'd like. Try learning a new language if you're up for the challenge (more on that below)!
 - Leave any comments in your code to explain your thought process and show prompts that GitHub Copilot used to help you out.

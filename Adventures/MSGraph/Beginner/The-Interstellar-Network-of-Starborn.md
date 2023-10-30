@@ -39,11 +39,12 @@ You are a newly appointed Systems Keeper on the planet Azurea. Your first task i
 
 ### Constraints
 
+- Write a console application.
 - Use the Microsoft Graph API to interact with the Interstellar Network.
 - Ensure secure and efficient access to the network.
 - Handle any potential errors or access issues gracefully.
 
-### Summary of High-Level Steps to Perform
+### Summary of High-Level Tasks to Perform
 
 1. Make an API call to sign in and retrieve your profile using the `/me` endpoint.
 2. Display your profile information.

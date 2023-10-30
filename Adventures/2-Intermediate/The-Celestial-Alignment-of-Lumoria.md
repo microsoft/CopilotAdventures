@@ -36,11 +36,12 @@ The planets aren't sorted by their distance from the Lumorian Sun so you'll need
 
 ### Constraints
 
+- Write a console application.
 - Use GitHub Copilot and write the simulation in any language you'd like.
 - Focus on clear and concise code that handles planet checks efficiently. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
 - Creating a visual SVG representation for the planets is optional but encouraged if you have time.
 
-### Summary of High-Level Steps to Perform
+### Summary of High-Level Tasks to Perform
 
 1. Sort the list of planets based on their distance from the Lumorian Sun.
 1. Traverse the sorted list of planets.

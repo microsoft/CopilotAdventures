@@ -57,7 +57,11 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 
 - Ensure that you have both the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extensions installed and are signed in to GitHub in VS Code.
 
-#### Summary of High-Level Steps to Perform
+### Constraints
+
+- Write a console application.
+
+### Summary of High-Level Tasks to Perform
 
 1. **Define Constants and Data Structures**:
    - Define the `creatures` array containing the creature details.

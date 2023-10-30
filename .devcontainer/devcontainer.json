@@ -6,7 +6,9 @@
             "extensions": [
                 "github.copilot",
                 "gitHub.copilot-chat",
-                "gitHub.vscode-pull-request-github"
+                "gitHub.vscode-pull-request-github",
+                "ms-dotnettools.csdevkit",
+                "ms-python.python"
             ]
         }
     }

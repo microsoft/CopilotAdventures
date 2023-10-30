@@ -29,15 +29,17 @@ Your task is to create a system that checks all the clocks in the town and synch
 
 ### Constraints
 
+- Write a console application.
 - Use GitHub Copilot and write the simulation in any language you'd like.
 - Focus on clear and concise code. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
 - Creating a visual representation for the clocks is optional but encouraged if you have time.
 
-### Summary of High-Level Steps to Perform
+### Summary of High-Level Tasks to Perform
 
-1. Parse the time data for each clock and the Grand Clock Tower.
-2. Calculate the difference in minutes between each clock and the Grand Clock Tower.
-3. Output the list of time differences.
+- Write a console application.
+- Parse the time data for each clock and the Grand Clock Tower.
+- Calculate the difference in minutes between each clock and the Grand Clock Tower.
+- Output the list of time differences.
 
 ### Tips to Get Started
 

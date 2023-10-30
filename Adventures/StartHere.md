@@ -67,9 +67,10 @@ The next number echoed by the room should be: 15
 
 ### Constraints:
 
+- Write a console application.
 - The following solution uses JavaScript and Node.js, but you can use Copilot to write the code in another language if you'd like. 
 
-### Summary of High-Level Steps to Perform:
+### Summary of High-Level Tasks to Perform:
 
 1. Create a constant to hold the provided number sequence.
 2. Determine the common difference between consecutive numbers.
