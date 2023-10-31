@@ -50,13 +50,13 @@ Your task is to simulate the duel between Rok and Papyra. Each warrior makes a s
 
 ### Constraints
 
-- Write a console application.
 - Write the simulation using GitHub Copilot and any language you choose. Try learning a new language if you're up for the challenge!
 - Ensure efficient algorithms to handle the duel dynamics. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
 - Providing a graphical user interface for the simulation is optional.
 
 ### Summary of High-Level Tasks to Perform
 
+1. Use a console application to render the output.
 1. Initialize scores for both warriors.
 1. Each warrior selects a move for each round.
 1. Determine the winner of each round and award the points.

@@ -29,16 +29,15 @@ You, a young sorcerer's apprentice, have been given the task to retrieve and dec
 
 ### Constraints
 
-- Write a console application.
 - Write the simulation using GitHub Copilot and any language you choose. Try learning a new language if you're up for the challenge!
 - Ensure efficient algorithms to handle text retrieval and extraction. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
 
 ### Summary of High-Level Tasks to Perform
 
-- Write a console application.
-- Make an HTTP call to retrieve the content of the scroll.
-- Use a regular expression to filter out the misleading information and extract the true secrets.
-- Display the extracted secrets.
+1. Use a console application to render the output.
+1. Make an HTTP call to retrieve the content of the scroll.
+1. Use a regular expression to filter out the misleading information and extract the true secrets.
+1. Display the extracted secrets.
 
 ### GitHub Copilot Tips
 

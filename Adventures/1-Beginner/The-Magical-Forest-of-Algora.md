@@ -50,18 +50,18 @@ Your task is to simulate the dance between Lox and Faelis. Each creature has its
 
 ### Constraints
 
-- Write a console application.
 - Use GitHub Copilot and write the simulation in any language you'd like.
 - Focus on clear and concise code that handles the dance dynamics efficiently. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
 - Creating a visual representation for the dance and effects is optional but encouraged if you have time.
 
 ### Summary of High-Level Tasks to Perform
 
+1. Use a console application to render the output.
 1. Initialize the state of the forest.
-2. Each creature selects a dance move for each sequence.
-3. Determine the effect of the combined dance moves on the forest.
-4. Update the state of the forest after each sequence.
-5. Display the final state of the forest after the dance is complete.
+1. Each creature selects a dance move for each sequence.
+1. Determine the effect of the combined dance moves on the forest.
+1. Update the state of the forest after each sequence.
+1. Display the final state of the forest after the dance is complete.
 
 ### Tips to Get Started
 

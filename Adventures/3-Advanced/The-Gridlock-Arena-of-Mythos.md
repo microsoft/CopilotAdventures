@@ -57,25 +57,23 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 
 - Ensure that you have both the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extensions installed and are signed in to GitHub in VS Code.
 
-### Constraints
-
-- Write a console application.
-
 ### Summary of High-Level Tasks to Perform
+
+1. Use a console application to render the output.
 
 1. **Define Constants and Data Structures**:
    - Define the `creatures` array containing the creature details.
    - Define a `directions` object to map the movement directions to their respective changes in coordinates.
 
-2. **Initialize the Battle Grid**:
+1. **Initialize the Battle Grid**:
    - Set the grid size and create a 2D array (`grid`) with all cells initialized to `null`.
 
-3. **Initialize Scores and Grid**:
+1. **Initialize Scores and Grid**:
    - Loop through each creature in the `creatures` array.
    - For each creature, initialize its score to 0 in the `scores` object.
    - Place each creature on the grid using its starting position and icon.
 
-4. **Simulate Battle Moves**:
+1. **Simulate Battle Moves**:
    - Loop through the number of moves, starting from -1 (to represent the initial state).
    - If it's the initial state (`move` is -1), render the grid.
    - If it's the last move, exit the loop after rendering.
@@ -84,13 +82,13 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
      - Check if the new position overlaps with another creature.
      - Update scores and grid state based on overlaps or successful moves.
 
-5. **Render the Grid**:
+1. **Render the Grid**:
    - For each state of the grid (initial and after each move):
      - Display the move number or "Initial Board" for the initial state.
      - Print the grid state with creatures or an empty cell representation.
      - Display the current scores for all creatures.
 
-6. **Return Final Scores**:
+1. **Return Final Scores**:
    - After all moves have been simulated, return the final scores for each creature. 
 
 ### GitHub Copilot Tips

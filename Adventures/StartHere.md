@@ -67,14 +67,14 @@ The next number echoed by the room should be: 15
 
 ### Constraints:
 
-- Write a console application.
 - The following solution uses JavaScript and Node.js, but you can use Copilot to write the code in another language if you'd like. 
 
 ### Summary of High-Level Tasks to Perform:
 
+1. Use a console application to render the output.
 1. Create a constant to hold the provided number sequence.
-2. Determine the common difference between consecutive numbers.
-3. Predict the next number in the sequence using the identified pattern.
+1. Determine the common difference between consecutive numbers.
+1. Predict the next number in the sequence using the identified pattern.
 
 
 ### GitHub Copilot Steps
