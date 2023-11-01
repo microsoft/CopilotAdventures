@@ -2,13 +2,15 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        if (args.Length == 0)
+
+        var adventure = args?.FirstOrDefault()?.ToLower();
+        if (string.IsNullOrWhiteSpace(adventure))
         {
-            Console.WriteLine("Please specify which logic to run.");
-            return;
+            Console.WriteLine("Please specify which logic to run: Sample names include: lumoria, algora, stonevale, temporal, mythos.");
+            adventure = Console.ReadLine();
         }
 
-        switch (args[0].ToLower())
+        switch (adventure)
         {
             case "algora":
                 Algora.Run();
@@ -32,7 +34,7 @@ public class Program
                 Tempora.Run();
                 break;
             default:
-                Console.WriteLine($"Unknown option: {args[0]}");
+                Console.WriteLine($"Unknown option: {adventure}");
                 break;
         }
     }
