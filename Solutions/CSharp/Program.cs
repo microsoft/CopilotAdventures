@@ -6,7 +6,7 @@ public class Program
         var adventure = args?.FirstOrDefault()?.ToLower();
         if (string.IsNullOrWhiteSpace(adventure))
         {
-            Console.WriteLine("Please specify which logic to run: Sample names include: lumoria, algora, stonevale, temporal, mythos.");
+            Console.WriteLine("Please specify which logic to run: Sample names include: algora, chamberofechoes, elodoria, lumoria, mythos, stonevale, tempora.");
             adventure = Console.ReadLine();
         }
 
