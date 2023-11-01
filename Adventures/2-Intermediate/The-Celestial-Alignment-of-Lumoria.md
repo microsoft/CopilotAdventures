@@ -48,6 +48,18 @@ The planets aren't sorted by their distance from the Lumorian Sun so you'll need
 1. For each planet, check the planets that are closer to the Lumorian Sun to see if they cast a shadow on other planets.
 1. Output the light intensity each planet receives.
 
+### Tips to Get Started
+
+1. If you're using a GitHub Codespace, you're ready to go!
+1. If running locally, ensure that you have your target language/framework installed. 
+    - [Node.js](https://nodejs.org)
+    - [Python](https://www.python.org/downloads/)
+    - [.NET](https://dot.net)
+1. Create a folder for your code. 
+    - JavaScript: Create a folder called `lumoria` and add a file named `app.js`.
+    - Python: Create a folder called `lumoria` and add a file named `app.py`.
+    - C#: Create a folder called `lumoria` and run `dotnet new console`.
+
 ### GitHub Copilot Tips
 
 <a href="#">

@@ -63,6 +63,18 @@ Your task is to simulate the duel between Rok and Papyra. Each warrior makes a s
 1. Tally the scores after 5 rounds.
 1. Declare the overall winner of the duel.
 
+### Tips to Get Started
+
+1. If you're using a GitHub Codespace, you're ready to go!
+1. If running locally, ensure that you have your target language/framework installed. 
+    - [Node.js](https://nodejs.org)
+    - [Python](https://www.python.org/downloads/)
+    - [.NET](https://dot.net)
+1. Create a folder for your code. 
+    - JavaScript: Create a folder called `stonevale` and add a file named `app.js`.
+    - Python: Create a folder called `stonevale` and add a file named `app.py`.
+    - C#: Create a folder called `stonevale` and run `dotnet new console`.
+
 ### GitHub Copilot Tips
 
 <a href="#">

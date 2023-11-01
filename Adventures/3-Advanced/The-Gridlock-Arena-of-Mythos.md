@@ -53,10 +53,6 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 - Ensure efficient algorithms to handle the battle dynamics. Ask GitHub Copilot/Chat, "How can I make this code more readable and maintainable?".
 - The program should have 100% test coverge. Use the /tests command in GitHub Copilot Chat.
 
-### Getting Started
-
-- Ensure that you have both the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extensions installed and are signed in to GitHub in VS Code.
-
 ### Summary of High-Level Tasks to Perform
 
 1. Use a console application to render the output.
@@ -90,6 +86,18 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 
 1. **Return Final Scores**:
    - After all moves have been simulated, return the final scores for each creature. 
+
+### Tips to Get Started
+
+1. If you're using a GitHub Codespace, you're ready to go!
+1. If running locally, ensure that you have your target language/framework installed. 
+    - [Node.js](https://nodejs.org)
+    - [Python](https://www.python.org/downloads/)
+    - [.NET](https://dot.net)
+1. Create a folder for your code. 
+    - JavaScript: Create a folder called `mythos` and add a file named `app.js`.
+    - Python: Create a folder called `mythos` and add a file named `app.py`.
+    - C#: Create a folder called `mythos` and run `dotnet new console`.
 
 ### GitHub Copilot Tips
 
