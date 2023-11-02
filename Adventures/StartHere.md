@@ -115,6 +115,8 @@ This solution uses JavaScript and [Node.js](https://nodejs.org). Feel free to us
 
 1. Enter `/doc` into the textbox that appears and press <kbd>Enter</kbd>. You should see a comment generated for the function.
 
+    ![inline chat in vs code](../images/inline-chat.png)
+
 1. Select `Accept` to accept the suggestion.
 
 1. You should see that a comment is generated for the function.
