@@ -111,19 +111,13 @@ This solution uses JavaScript and [Node.js](https://nodejs.org). Feel free to us
     console.log(predictNext(echoes));
     ```
 
-1. Add the following comment immediately above the `predictNext` function and press <kbd>Enter</kbd>. 
+1. Move your cursor above the `predictNext` function and select <kbd>CTRL + i</kbd> (Windows) or <kbd>CMD + i</kbd> (Mac).
 
-    ```js
-    // Document what this code is doing
-    ```
+1. Enter `/doc` into the textbox that appears and press <kbd>Enter</kbd>. You should see a comment generated for the function.
 
-1. Accept the suggestion to add a comment. Copilot should generate a comment similar to the following:
+1. Select `Accept` to accept the suggestion.
 
-    ```js
-    // This code is predicting the next number in the sequence by  
-    // finding the difference between the first two numbers and 
-    // adding that difference to the last number in the sequence.
-    ```
+1. You should see that a comment is generated for the function.
 
     **NOTE:** In addition to generating documentation, you can also use comments to generate code.
 
