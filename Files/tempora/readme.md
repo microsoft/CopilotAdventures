@@ -42,13 +42,13 @@ function timeDifference(time1, time2) {
 This function takes two time strings in the format 'HH:MM', splits them into hours and minutes, and calculates the difference in minutes.
 
 Write the synchronizeClocks function:
-
+```javascript
 // Function to synchronize an array of times with a reference time
 function synchronizeClocks(times, referenceTime) {
     // For each time in the array, calculate the time difference with the reference time
     return times.map(time => timeDifference(time, referenceTime));
 }
-
+```
 This function takes an array of time strings and a reference time string, and returns a new array where each element is the difference in minutes between the corresponding time in the input array and the reference time.
 
 4. Test the code:
