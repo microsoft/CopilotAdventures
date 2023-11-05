@@ -22,6 +22,9 @@ This is a real-world problem that can be solved with code. By writing this progr
 
 2. Write the timeDifference function:
 
+rite the timeDifference function:
+
+```javascript
 // Function to calculate the time difference between two time values in the format 'HH:MM'
 function timeDifference(time1, time2) {
     // Split the time strings into hours and minutes and convert them to numbers
@@ -36,6 +39,7 @@ function timeDifference(time1, time2) {
     // Calculate the time difference in minutes
     return (hour1 - hour2) * 60 + (minute1 - minute2);
 }
+```
 
 This function takes two time strings in the format 'HH:MM', splits them into hours and minutes, and calculates the difference in minutes.
 
