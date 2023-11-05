@@ -31,7 +31,11 @@ function timeDifference(time1, time2) {
 // Function to synchronize an array of times with a reference time
 function synchronizeClocks(times, referenceTime) {
     // For each time in the array, calculate the time difference with the reference time
-    return times.map(time => timeDifference(time, referenceTime));
+    return times.map((time, index) => {
+        const difference = timeDifference(time, referenceTime);
+        console.log(`Clock ${index + 1}: ${time} (${difference >= 0 ? '+' : ''}${difference} minutes)`);
+        return difference;
+    });
 }
 
 // An array of times to synchronize
