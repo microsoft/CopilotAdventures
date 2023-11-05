@@ -22,8 +22,6 @@ This is a real-world problem that can be solved with code. By writing this progr
 
 2. Write the timeDifference function:
 
-rite the timeDifference function:
-
 ```javascript
 // Function to calculate the time difference between two time values in the format 'HH:MM'
 function timeDifference(time1, time2) {
