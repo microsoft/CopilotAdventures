@@ -52,7 +52,7 @@ function synchronizeClocks(times, referenceTime) {
 This function takes an array of time strings and a reference time string, and returns a new array where each element is the difference in minutes between the corresponding time in the input array and the reference time.
 
 4. Test the code:
-
+```javascript
 // An array of times to synchronize
 const times = ["14:45", "15:05", "15:00", "14:40"];
 
@@ -61,7 +61,7 @@ const referenceTime = "15:00";
 
 // Log the result of synchronizing the times with the reference time
 console.log(synchronizeClocks(times, referenceTime));  // [-15, 5, 0, -20]
-
+```
 This code creates an array of times and a reference time, and then logs the result of synchronizing the times with the reference time.
 
 ## Running the Code
