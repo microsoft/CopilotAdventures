@@ -18,10 +18,24 @@ Create a new file: Open your code editor and create a new file. Save it as app.j
 
 Write the timeDifference function:
 
+```javascript
+// Function to calculate the time difference between two time values in the format 'HH:MM'
+function timeDifference(time1, time2) {
+    // Split the time strings into hours and minutes and convert them to numbers
+    const [hour1, minute1] = time1.split(":").map(Number);
+    const [hour2, minute2] = time2.split(":").map(Number);
+
+    // Check if any of the time components are not numbers (i.e., the input was not in the expected format)
+    if (isNaN(hour1) || isNaN(minute1) || isNaN(hour2) || isNaN(minute2)) {
+        throw new Error("Invalid time format. Expected 'HH:MM'.");
+    }
 
     // Calculate the time difference in minutes
     return (hour1 - hour2) * 60 + (minute1 - minute2);
 }
+```
+
+
 This function takes two time strings in the format 'HH:MM', splits them into hours and minutes, and calculates the difference in minutes.
 
 Write the synchronizeClocks function:
