@@ -33,7 +33,7 @@ Follow the steps below to install the GitHub Copilot extension in Visual Studio 
 If you don't currently have a GitHub Copilot license, you can:
 
 - [Sign up for a free trial](https://github.com/login?return_to=%2fgithub-copilot%2fsignup). 
-- If you have a coupon code, view the instructions to use it <a href="../README.md#coupon">here</a>.
+- If you have a coupon code, <a href="../README.md#coupon">view the instructions to use it.</a>.
 
 ## Your First Adventure: The Chamber of Echoes
 
