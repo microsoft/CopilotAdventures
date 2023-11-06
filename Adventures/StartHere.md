@@ -27,12 +27,17 @@ Follow the steps below to install the GitHub Copilot extension in Visual Studio 
 1. Install GitHub Copilot by following the steps at https://docs.github.com/en/copilot/getting-started-with-github-copilot. 
 
 1. Install GitHub Copilot Chat by following the steps at https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat.
-    
-NOTE: If you don't currently have a GitHub Copilot license, you can [sign up for a free trial](https://github.com/login?return_to=%2fgithub-copilot%2fsignup).
 
-Let's get started with your first adventure!
+## What If I Don't Have a GitHub Copilot License?
+
+If you don't currently have a GitHub Copilot license, you can:
+
+- [Sign up for a free trial](https://github.com/login?return_to=%2fgithub-copilot%2fsignup). 
+- If you have a coupon code, view the instructions to use it <a href="../README.md#coupon">here</a>.
 
 ## Your First Adventure: The Chamber of Echoes
+
+Let's get started with your first adventure!
 
 <a href="#">
     <img src="../Images/echo-castle.jpg" style="width: 830px" />
@@ -160,3 +165,11 @@ This solution uses JavaScript and [Node.js](https://nodejs.org). Feel free to us
 </a>
 
 You've completed your first GitHub Copilot "warmup" adventure! Check out the other adventures located in the [Adventures](../Adventures) folder to see other ways GitHub Copilot can be used.
+
+
+
+
+
+
+
+
