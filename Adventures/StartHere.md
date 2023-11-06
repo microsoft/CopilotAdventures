@@ -4,7 +4,7 @@
     <img src="../Images/warm-up.jpg" style="width: 830px" />
 </a>
 
-GitHub Copilot is an AI pair programmer that helps you write better code. In this warm up adventure you'll get to know Copilot and try it out for yourself. Here are a few things you can do with GitHub Copilot:
+ GitHub Copilot is an AI pair programmer that helps you write better code. In this warm up adventure you'll get to know Copilot and try it out for yourself. Here are a few things you can do with GitHub Copilot:
 
 - Convert comments into code. Need to make an HTTP call, filter an array, or perform another task? Write a comment and Copilot will convert it into code for you. 
 - Create a UI. Use pure HTML/CSS/JavaScript or a library/framework of your choosing. 
