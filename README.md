@@ -41,9 +41,11 @@ git clone https://github.com/microsoft/copilotadventures
 
 ### 2. Choose an Adventure
 
-Pre-Reqs: Basic programming language knowledge is helpful.
+**Pre-Reqs:** Basic programming language knowledge is helpful.
 
-New to GitHub Copilot and need to install the extensions and learn how to use it? Start with the [Warmup Adventure](./Adventures/StartHere.md) to learn the basics.
+#### New to GitHub Copilot?
+
+If you're new to GitHub Copilot, need to install the extensions, and want to learn how to get started using it, start with the [Warmup Adventure](./Adventures/StartHere.md).
 
 Once you've completed the warmup adventure and have the extensions installed, choose another GitHub Copilot adventure from the list below:
 
