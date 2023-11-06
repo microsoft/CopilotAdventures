@@ -1,18 +1,23 @@
 const loxMoves = ["Twirl", "Leap", "Spin", "Twirl", "Leap"];
-const drakoMoves = ["Spin", "Twirl", "Leap", "Leap", "Spin"];
+const faelisMoves = ["Spin", "Twirl", "Leap", "Leap", "Spin"];
 
 const effects = {
-  "TwirlTwirl": "Fireflies light up the forest.",
-  "LeapSpin": "Gentle rain starts falling.",
-  "SpinLeap": "A rainbow appears in the sky."
+    "TwirlTwirl": "Fireflies light up the forest",
+    "LeapLeap": "The forest grows taller",
+    "SpinSpin": "The forest shrinks",
+    "TwirlLeap": "The forest becomes more dense",
+    "LeapSpin": "Gentle rain starts falling",
+    "SpinLeap": "A rainbow appears in the sky",
+    "TwirlSpin": "The forest becomes less dense",
+    "LeapTwirl": "The forest becomes more vibrant",
 };
 
-function danceEffect(loxMove, drakoMove) {
-  return effects[`${loxMove}${drakoMove}`] || "A mysterious effect takes place.";
+function danceEffect(loxMove, faelisMove) {
+    return effects[`${loxMove}${faelisMove}`] || "A mysterious effect takes place.";
 }
 
-function simulateDance(loxMoves, drakoMoves) {
-  return loxMoves.map((move, index) => danceEffect(move, drakoMoves[index]));
+function simulateDance(loxMoves, faelisMoves) {
+    return loxMoves.map((move, index) => danceEffect(move, faelisMoves[index]));
 }
-
-console.log(simulateDance(loxMoves, drakoMoves));
+  
+console.log(simulateDance(loxMoves, faelisMoves));
