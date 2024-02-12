@@ -22,17 +22,7 @@ Welcome to Copilot Adventures! This series of coding adventures is all about lea
 ## Choose Your Own Copilot Adventure
 
 <a href="#">
-    <img src="./Images/choose-own-adventure.jpg" style="width: 830px" />
-</a>
-
-### 1. Enter the Adventure Arena
-
-To get started, enter the "adventure arena" by clicking the button below. This will create a GitHub Codespace that you can work in. Once it loads select the **Create codespace** button.
-
-[![Enter Adventure Arena](https://img.shields.io/static/v1?style=for-the-badge&label=Enter+Adventure+Arena&message=Open&color=brightgreen&logo=github)](https://codespaces.new/microsoft/CopilotAdventures)
-
-**NOTE:** You can use 60 hours of GitHub Codespaces [for free](https://github.com/features/codespaces#pricing) each month.
-
+    <img src="./Images/choose-own-advesmartphone
 If you'd prefer, you can clone the repo and run locally:
 
 ```bash
