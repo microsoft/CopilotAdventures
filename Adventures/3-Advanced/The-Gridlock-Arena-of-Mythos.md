@@ -10,7 +10,7 @@ In the mystical land of Mythos, creatures from various realms come together to b
 
 ### Objective
 
-Your task is to simulate a battle in the Gridlock Arena. Each creature will make a series of moves, and after each move, the creature might inflict damage on its opponent if they land on the same square. The goal is to accumulate the highest score by the end of the battle. To track the progress of the battle, visualize the grid after each move and display the current scores right below the grid.
+Your task is to simulate a battle in the Gridlock Arena. Each creature will make a series of moves, and after each move, the creature might inflict damage on its opponent if they land on the same square. The goal is to accumulate the highest score by the end of the battle. A round is completed when all creatures have taken one move this round. To track the progress of the battle, visualize the grid after each round and display the current scores right below the grid.
 
 ### Specifications
 
@@ -27,20 +27,30 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
     | Goblin | 2,3   | LEFT, RIGHT, UP      | 3     | 👺   |
     | Ogre   | 0,0   | RIGHT, DOWN, DOWN    | 5     | 👹   |
 
-3. **Battle Dynamics:**
+3. **Turn Order**
     - Creatures take turns making moves.
-    - If two creatures land on the same cell after a move, they both inflict damage on each other.
-    - Points are awarded based on the damage inflicted.
-    - The battle ends when all moves are completed.
+    - Each creature is evaluated in a sequential order, starting with topmost, then the next.
+    - The creature always takes the move that is the leftmost not yet executed move in its move specification.
+    - If a creature were to land on a cell occupied by another creature, the creature does not move, insteady a battle occurrs (see Battle Dynamics below).
+    - A round is completed when all creatures have made exactly one move this round.
+    - After that, the next round starts with the topmost creature.
+    - If a creature has no more moves left in its specification, the game ends.
 
-4. **Output:**
-    - After each move, visualize the grid by printing it to the console using ⬜️ to represent a cell. 
-    - Above the grid add a title that either says "Initial Board" (to show the initial state of the board) or "Move X" where X is the current move number.
+4. **Battle Dynamics:**
+
+    - If the creature would land on a cell already occupied by another creature, they both inflict damage on each other.
+    - Each creature gets points equal to the amount of damage it inflicted on the other creature.
+    - Each creature loses points equal to the amount of damage it received.
+    - Each pair of creatures may only battle once per round
+
+5. **Output:**
+    - After each round, visualize the grid by printing it to the console using ⬜️ to represent a cell. 
+    - Above the grid add a title that either says "Initial Board" (to show the initial state of the board) or "Round X" where X is the current round number.
     - Use each creature's icon to represent it on the grid. 
     - Empty cells can be represented by a ⬜️.
     - Battle cells can be represented by a 🤺.
-    - Display the current scores for each creature right below the grid after each move.
-    - At the end of the battle, return the total points each creature accumulated.
+    - Display the current scores for each creature right below the grid after each round.
+    - At the end of the game, return the total points each creature accumulated.
 
       
       <a href="#">
@@ -79,8 +89,8 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
      - Update scores and grid state based on overlaps or successful moves.
 
 1. **Render the Grid**:
-   - For each state of the grid (initial and after each move):
-     - Display the move number or "Initial Board" for the initial state.
+   - For each state of the grid (initial and after each round):
+     - Display the round number or "Initial Board" for the initial state.
      - Print the grid state with creatures or an empty cell representation.
      - Display the current scores for all creatures.
 
