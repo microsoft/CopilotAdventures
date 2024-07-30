@@ -22,6 +22,8 @@ If you're brand new to GitHub Copilot check out this video to learn more about t
 
 Follow the steps below to install the GitHub Copilot extension in Visual Studio or Visual Studio Code.
 
+**Are you a student?** Learn more about how to [setup and access GitHub Copilot here](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279). 
+
 1. Install [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) if you don't have it already.
 
 1. Install GitHub Copilot by following the steps at https://docs.github.com/en/copilot/getting-started-with-github-copilot. 

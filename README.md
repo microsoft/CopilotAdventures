@@ -30,24 +30,24 @@ git clone https://github.com/microsoft/copilotadventures
 
 #### New to GitHub Copilot?
 
-If you're new to GitHub Copilot, need to install the extensions, and want to learn how to get started using it, start with the [Warmup Adventure](./Adventures/StartHere.md).
+If you're new to GitHub Copilot, need to install the extensions, and want to learn how to get started using it, start with the **[Warmup Adventure](./Adventures/Warmup-Adventure.md)**.
 
 Once you've completed the warmup adventure and have the extensions installed, choose another GitHub Copilot adventure from the list below:
 
 #### Beginner Adventures
 
-- [The Clockwork Town of Tempora](./Adventures/1-Beginner/The-Clockwork-Town-of-Tempora.md)
-- [The Magical Forest of Algora](./Adventures/1-Beginner/The-Magical-Forest-of-Algora.md)
+- **[The Clockwork Town of Tempora](./Adventures/1-Beginner/The-Clockwork-Town-of-Tempora.md)** - In the mechanical town of Tempora, everything operates on clockwork and precise timing. At the heart of the town is the Grand Clock Tower, responsible for keeping time for all the town's activities. However, over the years, some smaller clocks in the town have started to drift away from the accurate time.
+- **[The Magical Forest of Algora](./Adventures/1-Beginner/The-Magical-Forest-of-Algora.md)** - Deep within the enchanted Forest of Algora, two mystical creatures, the Lox and the Faelis, perform a sacred dance every millennium. This dance is not just for celebration but is a ritual to bring balance to the forest.
 
 #### Intermediate Adventures
 
-- [The Celestia Alignment of Lumoria](./Adventures/2-Intermediate/The-Celestial-Alignment-of-Lumoria.md)
-- [The Legendary Duel of Stonevale](./Adventures/2-Intermediate/The-Legendary-Duel-of-Stonevale.md)
-- [The Scrolls of Eldoria](./Adventures/2-Intermediate/The-Scrolls-of-Eldoria.md)
+- **[The Celestia Alignment of Lumoria](./Adventures/2-Intermediate/The-Celestial-Alignment-of-Lumoria.md)** - In the vast expanse of the Galaxia Nebulae, a rare phenomenon is about to occur in the Lumoria star system. The planets, revolving around the Lumorian Sun, are aligning in a celestial dance that happens only once every few millennia. This alignment has a unique effect on how the light from the Lumorian Sun reaches each planet.
+- **[The Legendary Duel of Stonevale](./Adventures/2-Intermediate/The-Legendary-Duel-of-Stonevale.md)** - In the mystical realm of Stonevale, two warriors, Rok and Papyra, are chosen for a duel that determines the fate of their tribes for the next century. The arena, known as Scissoria, is where each move carries weight and consequences.
+- **[The Scrolls of Eldoria](./Adventures/2-Intermediate/The-Scrolls-of-Eldoria.md)** - In the enchanted land of Eldoria, ancient scrolls contain the secrets of the universe. These scrolls, however, were scattered and protected by the Elders using powerful spells. These spells concealed the secrets within the scrolls, adding layers of misleading information to deter prying eyes. Over time, these scrolls were digitized and stored in the Great Eldorian Library, accessible only through the Eldorian Web of Knowledge.
 
 #### Advanced Adventures
 
-- [The Gridlock Arena of Mythos](./Adventures/3-Advanced/The-Gridlock-Arena-of-Mythos.md)
+- **[The Gridlock Arena of Mythos](./Adventures/3-Advanced/The-Gridlock-Arena-of-Mythos.md)** - In the mystical land of Mythos, creatures from various realms come together to battle in the Gridlock Arena, a chess-like grid where strategy, power, and cunning are tested. Each creature has its unique move, power, and strategy.
 
 ### 3. Start Coding
 
@@ -56,7 +56,7 @@ Read Your Copilot Adventure description, the high-Level tasks to perform, and th
 - Use [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) and/or [GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat) to help you write the code for the adventure. You can use any language you'd like. Try learning a new language if you're up for the challenge (more on that below)!
 - Leave any comments in your code to explain your thought process and show prompts that GitHub Copilot used to help you out.
 
-### 4. Submit Your Adventure Solution (Optional)
+<!-- ### 4. Submit Your Adventure Solution (Optional)
 
 If you'd like to share your solution with others, perform the following steps:
 
@@ -71,7 +71,7 @@ If you'd like to share your solution with others, perform the following steps:
     Replace `[Name of Your Adventure]` with the adventure name you chose to solve (example: `The Legendary Duel of Stonevale`).
 
 - Add a link to your GitHub repo in the body section.
-- If you have any feedback, share what you found (good or bad). We'd love to hear your feedback!
+- If you have any feedback, share what you found (good or bad). We'd love to hear your feedback! -->
 
 ## Next Steps: Learn a New Language or Create a UI for Your Adventure
 
@@ -90,41 +90,7 @@ Do you have a copilot adventure story/puzzle you'd like to submit for others to 
 - Use `New Copilot Adventure: [Your Adventure Name]` for the PR title. Replace `[Your Adventure Name]` with the name of your adventure.
 - Include if your adventure is at the beginner, intermediate, or advanced level.
 - Follow the markdown template used with each adventure in the [Adventures](./Adventures) folder as you create your adventure.
-- Provide an image for your adventure (use [Bing Image Creator](https://www.bing.com/create) or another image generator solution).
-- Provide a solution using your chosen language. Place all of the code in a single file (to keep things simple) and include it in the PR.
+- Provide an image for your adventure (use [Microsoft Copilot Image Creator](https://www.bing.com/images/create) or another image generator solution). The image should "landscape" and be 1456x832 pixels.
+- Provide a solution using your chosen language. Place all of the code in a single file (to keep things simple), add it to the appropriate language folder in `Solutions`, and include it in the PR.
 
 We'll review your submission and merge it into the repo if it meets the criteria.
-
-## <a name="coupon"></a>Instructions to Redeem a GitHub Copilot Workshop Coupon
-
-1. Sign in to GitHub.
-
-1. Go to https://github.com/redeem/XXX-YYY where XXX-YYY is the coupon code for your workshop.
-
-    ![Redeem Coupon Form](./Images/Coupon/redeem-coupon-form.png)
-
-1. Fill in your address. It will not ask for a Credit Card. 
-
-1. Select `Save`.
-
-1. In the coupon summary page, select `Redeem`.
-
-    ![Redeem Coupon](./Images/Coupon/redeem.png)
-
-1. You should receive a message on your GitHub dashboard.
-
-    ![Dashboard Message](./Images/Coupon/dashboard-message.png)
-
-1. Visit https://gh.io/copilot-free. This step is necessary after redeeming the coupon. You will not have access to GitHub Copilot until you've signed up and configured your preferences.
-
-1. Select `Get access to GitHub Copilot`.
-
-    ![Get Access](./Images/Coupon/get-access.png)
-
-1. Pick the settings needed for the workshop (for example select `Allow`) and then select `Save and get started`.
-
-    ![Dashboard Message](./Images/Coupon/select-preferences.png)
-
-1. You should now have access to GitHub Copilot for 7 days!
-
-    ![Dashboard Message](./Images/Coupon/success.png)

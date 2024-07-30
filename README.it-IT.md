@@ -30,7 +30,7 @@ git clone https://github.com/microsoft/copilotadventures
 
 #### Nuovo su GitHub Copilot?
 
-Se sei nuovo su GitHub Copilot, devi installare le estensioni e vuoi imparare come iniziare a usarlo, inizia con l'[Avventura di Riscaldamento](./Adventures/StartHere.it-IT.md).
+Se sei nuovo su GitHub Copilot, devi installare le estensioni e vuoi imparare come iniziare a usarlo, inizia con l'[Avventura di Riscaldamento](./Adventures/Warmup-Adventure.it-IT.md).
 
 Una volta completata l'avventura di riscaldamento e installate le estensioni, scegli un'altra avventura di GitHub Copilot dalla lista qui sotto:
 
