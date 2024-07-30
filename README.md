@@ -56,7 +56,7 @@ Read Your Copilot Adventure description, the high-Level tasks to perform, and th
 - Use [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) and/or [GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat) to help you write the code for the adventure. You can use any language you'd like. Try learning a new language if you're up for the challenge (more on that below)!
 - Leave any comments in your code to explain your thought process and show prompts that GitHub Copilot used to help you out.
 
-<!-- ### 4. Submit Your Adventure Solution (Optional)
+### 4. Submit Your Adventure Solution (Optional)
 
 If you'd like to share your solution with others, perform the following steps:
 
@@ -71,7 +71,7 @@ If you'd like to share your solution with others, perform the following steps:
     Replace `[Name of Your Adventure]` with the adventure name you chose to solve (example: `The Legendary Duel of Stonevale`).
 
 - Add a link to your GitHub repo in the body section.
-- If you have any feedback, share what you found (good or bad). We'd love to hear your feedback! -->
+- If you have any feedback, share what you found (good or bad). We'd love to hear your feedback!
 
 ## Next Steps: Learn a New Language or Create a UI for Your Adventure
 

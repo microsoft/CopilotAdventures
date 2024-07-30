@@ -30,10 +30,12 @@ Segui i passaggi seguenti per installare l'estensione GitHub Copilot in Visual S
 
 ## E se non ho una licenza GitHub Copilot?
 
+**Sei uno studente?** Scopri di più su come [configurare e accedere a GitHub Copilot qui](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279). 
+
 Se attualmente non hai una licenza GitHub Copilot, puoi:
 
 - [Iscriviti per una prova gratuita](https://github.com/login?return_to=%2fgithub-copilot%2fsignup).
-- Se hai un codice coupon, <a href="../README.it-IT.md#coupon">visualizza le istruzioni per usarlo.</a>.
+<!-- - Se hai un codice coupon, <a href="../README.it-IT.md#coupon">visualizza le istruzioni per usarlo.</a>. -->
 
 ## La tua prima avventura: La Camera degli Echi
 
