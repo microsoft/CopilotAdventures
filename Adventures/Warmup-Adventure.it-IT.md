@@ -26,8 +26,6 @@ Segui i passaggi seguenti per installare l'estensione GitHub Copilot in Visual S
 
 1. Installa GitHub Copilot seguendo i passaggi su https://docs.github.com/en/copilot/getting-started-with-github-copilot.
 
-1. Installa GitHub Copilot Chat seguendo i passaggi su https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat.
-
 ## E se non ho una licenza GitHub Copilot?
 
 **Sei uno studente?** Scopri di più su come [configurare e accedere a GitHub Copilot qui](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279). 

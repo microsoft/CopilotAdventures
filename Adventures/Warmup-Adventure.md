@@ -26,8 +26,6 @@ Follow the steps below to install the GitHub Copilot extension in Visual Studio 
 
 1. Install GitHub Copilot by following the steps at https://docs.github.com/en/copilot/getting-started-with-github-copilot. 
 
-1. Install GitHub Copilot Chat by following the steps at https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat.
-
 ## What If I Don't Have a GitHub Copilot License?
 
 **Are you a student?** Learn more about how to [setup and access GitHub Copilot here](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279). 
