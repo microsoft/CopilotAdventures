@@ -51,7 +51,7 @@ Il tuo compito è simulare una battaglia nell'Arena Gridlock. Ogni creatura far�
 
 - Usa GitHub Copilot e scrivi la simulazione in qualsiasi linguaggio tu preferisca.
 - Assicurati che gli algoritmi siano efficienti per gestire le dinamiche della battaglia. Chiedi a GitHub Copilot/Chat, "Come posso rendere questo codice più leggibile e manutenibile?".
-- Il programma dovrebbe avere una copertura di test del 100%. Usa il comando /tests in GitHub Copilot Chat.
+- Il programma dovrebbe avere una copertura di test del 100%. Usa il comando /tests in GitHub Copilot.
 
 ### Riassunto delle Attività di Alto Livello da Eseguire
 
@@ -110,8 +110,8 @@ Il tuo compito è simulare una battaglia nell'Arena Gridlock. Ogni creatura far�
 Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del codice.
 
 1. Apri la [vista Chat di GitHub Copilot](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat#asking-your-first-question) nella barra laterale se non è già aperta. Assicurati che il tuo file di soluzione sia ancora aperto.
-2. Chiedi a Copilot Chat qual è la complessità del codice.
-3. Chiedi a Copilot Chat di rendere il codice più efficiente.
+2. Chiedi a GitHub Copilot qual è la complessità del codice.
+3. Chiedi a GitHub Copilot di rendere il codice più efficiente.
 4. Chiedi di nuovo la complessità - è migliore?
 
 #### Usa Copilot per generare commenti al codice
@@ -119,13 +119,13 @@ Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del cod
 1. Evidenzia tutto il codice con <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>A</kbd>.
 2. Premi <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>I</kbd> per aprire la chat inline.
 3. Digita "/doc"
-4. Chiedi a Copilot Chat di documentare la funzione.
+4. Chiedi a GitHub Copilot di documentare la funzione.
 
 #### Usa Copilot per semplificare il tuo codice
 
 1. Apri la Chat di GitHub Copilot nella barra laterale.
 2. Digita "/simplify" e premi <kbd>Enter</kbd>. Puoi anche aggiungere qualsiasi testo vuoi dopo il "/simplify" per dare più istruzioni a Copilot.
-3. Cosa ha suggerito Copilot Chat per renderlo più semplice?
+3. Cosa ha suggerito GitHub Copilot per renderlo più semplice?
 
 #### Hai Errori?
 

@@ -85,9 +85,9 @@ Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del cod
 
 1. Apri la [vista Chat di GitHub Copilot](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat#asking-your-first-question) nella barra laterale se non è già aperta. Assicurati che il tuo file di soluzione sia ancora aperto.
 
-1. Chiedi a Copilot Chat qual è la complessità del codice.
+1. Chiedi a GitHub Copilot qual è la complessità del codice.
 
-1. Chiedi a Copilot Chat di rendere il codice più efficiente.
+1. Chiedi a GitHub Copilot di rendere il codice più efficiente.
 
 1. Chiedi di nuovo la complessità - è migliorata?
 
@@ -99,7 +99,7 @@ Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del cod
 
 1. Digita "/doc"
 
-1. Chiedi a Copilot Chat di documentare la funzione.
+1. Chiedi a GitHub Copilot di documentare la funzione.
 
 #### Usa Copilot per semplificare il tuo codice
 
@@ -107,7 +107,7 @@ Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del cod
 
 1. Digita "/simplify" e premi <kbd>Enter</kbd>. Puoi anche aggiungere qualsiasi testo vuoi dopo il "/simplify" per dare più istruzioni a Copilot.
 
-1. Cosa ha suggerito Copilot Chat per renderlo più semplice?
+1. Cosa ha suggerito GitHub Copilot per renderlo più semplice?
 
 #### Hai Errori?
 

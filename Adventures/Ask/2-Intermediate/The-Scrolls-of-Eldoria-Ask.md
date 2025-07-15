@@ -61,11 +61,11 @@ You, a young sorcerer's apprentice, have been given the task to retrieve and dec
 
 See if you can use Copilot to find out the complexity (BigO notation) of the code.
 
-1. Open the [GitHub Copilot Chat view](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat#asking-your-first-question) in the sidebar if it's not already open. Make sure your solution file is still open as well.
+1. Open [GitHub Copilot](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat#asking-your-first-question) in the sidebar if it's not already open. Make sure your solution file is still open as well.
 
-1. Ask Copilot Chat what the complexity of the code is.
+1. Ask GitHub Copilot what the complexity of the code is.
 
-1. Ask Copilot Chat to make the code more efficient.
+1. Ask GitHub Copilot to make the code more efficient.
 
 1. Ask for the complexity again - is it better?
 
@@ -77,16 +77,16 @@ See if you can use Copilot to find out the complexity (BigO notation) of the cod
 
 1. Type "/doc"
 
-1. Ask Copilot Chat to document the function.
+1. Ask GitHub Copilot to document the function.
 
 #### Use Copilot to simplify your code
 
-1. Open GitHub Copilot Chat in the sidebar.
+1. Open GitHub Copilot in the sidebar.
 
 1. Type "/simplify" and press <kbd>Enter</kbd>. You can also add any text you want after the "/simplify" to give Copilot more instructions.
 
-1. What did Copilot Chat suggest you do to make it simpler?
+1. What did GitHub Copilot suggest you do to make it simpler?
 
 #### Got Errors?
 
-Copilot Chat can help with that too! Just copy the error message and paste it into Chat. Often that's all Copilot needs to resolve your issue.
+GitHub Copilot can help with that too! Just copy the error message and paste it into the chat. Often that's all Copilot needs to resolve your issue.

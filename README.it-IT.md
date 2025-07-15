@@ -91,7 +91,7 @@ GitHub Copilot offre tre potenti modalità di interazione:
 
 Leggi la descrizione della tua avventura Copilot, le attività ad alto livello da eseguire e i suggerimenti di GitHub Copilot per aiutarti a scrivere il tuo codice.
 
-- Usa [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) e/o [GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat) per aiutarti a scrivere il codice per l'avventura. Puoi usare qualsiasi linguaggio tu preferisca. Prova a imparare un nuovo linguaggio se sei pronto per la sfida (più su)!
+- Usa [GitHub Copilot](https://docs.github.com/en/copilot/get-started/quickstart) per aiutarti a scrivere il codice per l'avventura. Puoi usare qualsiasi linguaggio tu preferisca. Prova a imparare un nuovo linguaggio se sei pronto per la sfida (più su)!
 - Lascia eventuali commenti nel tuo codice per spiegare il tuo processo di pensiero e mostrare i suggerimenti che GitHub Copilot ha usato per aiutarti.
 
 ### 4. Invia la tua soluzione d'avventura (facoltativo)
@@ -119,7 +119,7 @@ Se desideri condividere la tua soluzione con gli altri, esegui i seguenti passag
 
 Una volta completata la tua prima avventura, provaci di nuovo ma questa volta usa GitHub Copilot per completare l'avventura utilizzando un linguaggio che ti è nuovo. Ad esempio, se normalmente scrivi codice in C#, usa Copilot per aiutarti a risolvere l'avventura utilizzando Python o un altro linguaggio che vorresti imparare di più.
 
-Prova a creare un'interfaccia utente per la tua avventura. Usa HTML/CSS/JavaScript puro o una libreria/framework a tua scelta. Lascia che GitHub Copilot/Chat ti aiuti con il codice dell'interfaccia utente. Se la tua interfaccia utente richiede immagini, considera l'uso di [Bing Image Creator](https://www.bing.com/create) o un altro servizio di generazione di immagini AI.
+Prova a creare un'interfaccia utente per la tua avventura. Usa HTML/CSS/JavaScript puro o una libreria/framework a tua scelta. Lascia che GitHub Copilot ti aiuti con il codice dell'interfaccia utente. Se la tua interfaccia utente richiede immagini, considera l'uso di [Bing Image Creator](https://www.bing.com/create) o un altro servizio di generazione di immagini AI.
 
 ## Hai un'idea per un'Avventura Copilot? Invia una PR!
 

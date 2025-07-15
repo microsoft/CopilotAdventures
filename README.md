@@ -91,7 +91,7 @@ GitHub Copilot offers three powerful interaction modes:
 
 Read Your Copilot Adventure description, the high-Level tasks to perform, and the GitHub Copilot hints to help you write your code.
 
-- Use [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) and/or [GitHub Copilot Chat](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat) to help you write the code for the adventure. You can use any language you'd like. Try learning a new language if you're up for the challenge (more on that below)!
+- Use [GitHub Copilot](https://docs.github.com/en/copilot/get-started/quickstart) to help you write the code for the adventure. You can use any language you'd like. Try learning a new language if you're up for the challenge (more on that below)!
 - Leave any comments in your code to explain your thought process and show prompts that GitHub Copilot used to help you out.
 
 ### 4. Submit Your Adventure Solution (Optional)
@@ -119,7 +119,7 @@ If you'd like to share your solution with others, perform the following steps:
 
 Once you've completed your first adventure, try it again but this time use GitHub Copilot to complete the adventure using a language that's new to you. For example, if you normally write code in C#, use Copilot to help you solve the adventure using Python or another language you'd like to learn more about.
 
-Try creating a UI for your adventure. Use pure HTML/CSS/JavaScript or a library/framework of your choosing. Let GitHub Copilot/Chat help you out with the UI code. If your UI requires images, consider using [Bing Image Creator](https://www.bing.com/create) or another AI image generation service.
+Try creating a UI for your adventure. Use pure HTML/CSS/JavaScript or a library/framework of your choosing. Let GitHub Copilot help you out with the UI code. If your UI requires images, consider using [Bing Image Creator](https://www.bing.com/create) or another AI image generation service.
 
 ## Have a Copilot Adventure Idea? Submit a PR!
 

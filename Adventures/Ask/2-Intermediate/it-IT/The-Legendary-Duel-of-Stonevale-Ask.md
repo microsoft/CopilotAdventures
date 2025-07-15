@@ -86,8 +86,8 @@ Il tuo compito è simulare il duello tra Rok e Papyra. Ogni guerriero fa una ser
 Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del codice.
 
 1. Apri la [vista Chat di GitHub Copilot](https://docs.github.com/en/copilot/github-copilot-chat/using-github-copilot-chat#asking-your-first-question) nella barra laterale se non è già aperta. Assicurati che il tuo file di soluzione sia ancora aperto.
-2. Chiedi a Copilot Chat qual è la complessità del codice.
-3. Chiedi a Copilot Chat di rendere il codice più efficiente.
+2. Chiedi a GitHub Copilot qual è la complessità del codice.
+3. Chiedi a GitHub Copilot di rendere il codice più efficiente.
 4. Chiedi di nuovo la complessità - è migliorata?
 
 #### Usa Copilot per generare commenti al codice
@@ -95,13 +95,13 @@ Vedi se puoi usare Copilot per scoprire la complessità (notazione BigO) del cod
 1. Evidenzia tutto il codice con <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>A</kbd>.
 2. Premi <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>I</kbd> per aprire la chat inline.
 3. Digita "/doc"
-4. Chiedi a Copilot Chat di documentare la funzione.
+4. Chiedi a GitHub Copilot di documentare la funzione.
 
 #### Usa Copilot per semplificare il tuo codice
 
 1. Apri la Chat di GitHub Copilot nella barra laterale.
 2. Digita "/simplify" e premi <kbd>Enter</kbd>. Puoi anche aggiungere qualsiasi testo desideri dopo "/simplify" per dare più istruzioni a Copilot.
-3. Cosa ti ha suggerito Copilot Chat per semplificarlo?
+3. Cosa ti ha suggerito GitHub Copilot per semplificarlo?
 
 #### Hai errori?
 
