@@ -1,4 +1,4 @@
-## The Scrolls of Eldoria
+## The Scrolls of Eldoria: Ask Mode Adventure
 
 <a href="#">
     <img src="../../Images/eldoria.jpg" style="width: 830px" />

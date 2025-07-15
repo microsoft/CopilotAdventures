@@ -1,4 +1,4 @@
-## The Gridlock Arena of Mythos
+## The Gridlock Arena of Mythos: Ask Mode Adventure
 
 <a href="#">
    <img src="../../Images/mythos-arena-full.jpg" style="width: 830px" />

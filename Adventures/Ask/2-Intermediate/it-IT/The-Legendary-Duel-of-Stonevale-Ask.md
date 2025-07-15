@@ -1,4 +1,4 @@
-## Il Leggendario Duello di Stonevale
+## Il Leggendario Duello di Stonevale: Avventura Modalità Ask
 
 <a href="#">
     <img src="../../../Images/stonevale.jpg" style="width: 830px" />

@@ -1,4 +1,4 @@
-## The Legendary Duel of Stonevale
+## The Legendary Duel of Stonevale: Ask Mode Adventure
 
 <a href="#">
     <img src="../../Images/stonevale.jpg" style="width: 830px" />

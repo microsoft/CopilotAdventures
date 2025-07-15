@@ -1,4 +1,4 @@
-## L'Allineamento Celeste di Lumoria
+## L'Allineamento Celeste di Lumoria: Avventura Modalità Ask
 
 <a href="#">
     <img src="../../../Images/lumoria.jpg" style="width: 830px" />

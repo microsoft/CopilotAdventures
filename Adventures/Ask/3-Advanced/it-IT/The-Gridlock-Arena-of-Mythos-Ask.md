@@ -1,4 +1,4 @@
-## L'Arena Gridlock di Mythos
+## L'Arena Gridlock di Mythos: Avventura Modalità Ask
 
 <a href="#">
    <img src="../../../Images/mythos-arena-full.jpg" style="width: 830px" />

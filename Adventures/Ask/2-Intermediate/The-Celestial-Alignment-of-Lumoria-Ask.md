@@ -1,4 +1,4 @@
-## The Celestial Alignment of Lumoria
+## The Celestial Alignment of Lumoria: Ask Mode Adventure
 
 <a href="#">
     <img src="../../Images/lumoria.jpg" style="width: 830px" />

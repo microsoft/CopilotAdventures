@@ -1,4 +1,4 @@
-## The Clockwork Town of Tempora
+## The Clockwork Town of Tempora: Ask Mode Adventure
 
 <a href="#">
     <img src="../../Images/tempora-clocks.jpg"  style="width: 830px" />

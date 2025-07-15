@@ -1,4 +1,4 @@
-## The Magical Forest of Algora
+## The Magical Forest of Algora: Ask Mode Adventure
 
 <a href="#">
     <img src="../../Images/algora-forest.jpg" style="width: 830px" />

@@ -1,4 +1,4 @@
-## GitHub Copilot Warmup Adventure
+## GitHub Copilot Warmup Adventure: Ask Mode Adventure
 
 <a href="#">
     <img src="../Images/warm-up.jpg" style="width: 830px" />

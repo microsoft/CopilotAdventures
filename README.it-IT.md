@@ -30,24 +30,62 @@ git clone https://github.com/microsoft/copilotadventures
 
 #### Nuovo su GitHub Copilot?
 
-Se sei nuovo su GitHub Copilot, devi installare le estensioni e vuoi imparare come iniziare a usarlo, inizia con l'[Avventura di Riscaldamento](./Adventures/Warmup-Adventure.it-IT.md).
+Se sei nuovo su GitHub Copilot, devi installare le estensioni e vuoi imparare come iniziare a usarlo, inizia con una di queste avventure di riscaldamento:
 
-Una volta completata l'avventura di riscaldamento e installate le estensioni, scegli un'altra avventura di GitHub Copilot dalla lista qui sotto:
+- **[Avventura di Riscaldamento - Modalità Agent](./Adventures/Agent/Warmup-Adventure-Agent.it-IT.md)** - Impara la Modalità Agent autonoma di GitHub Copilot
+- **[Avventura di Riscaldamento - Modalità Ask](./Adventures/Ask/Warmup-Adventure-Ask.it-IT.md)** - Impara la Modalità Ask di GitHub Copilot
+
+#### Comprendere le Modalità di GitHub Copilot
+
+GitHub Copilot offre tre potenti modalità di interazione:
+
+🤖 **Modalità Agent** - IA autonoma che può comprendere compiti complessi, creare interi progetti da zero e lavorare su più file. Perfetta per costruire applicazioni complete con una guida minima. La modalità Agent può iterare autonomamente sul proprio codice, identificare e correggere automaticamente gli errori ed eseguire comandi terminali.
+
+✏️ **Modalità Edit** - Esperienza di editing multi-file che combina il flusso conversazionale con suggerimenti di codice inline. Copilot Edits può proporre modifiche su più file, creare nuovi file e fornire feedback iterativo veloce per modifiche su larga scala.
+
+💬 **Modalità Ask** - Modalità chat interattiva dove collabori passo dopo passo con Copilot attraverso la conversazione. Ottima per imparare, ottenere spiegazioni, fare brainstorming di soluzioni e quando vuoi più controllo sul processo.
+
+---
+
+## 🤖 Avventure in Modalità Agent
+
+*Sperimenta lo sviluppo autonomo con IA per la creazione completa di progetti*
 
 #### Avventure per principianti
 
-- [La città meccanica di Tempora](./Adventures/1-Beginner/it-IT/The-Clockwork-Town-of-Tempora.md)
-- [La foresta magica di Algora](./Adventures/1-Beginner/it-IT/The-Magical-Forest-of-Algora.md)
+- **[La città meccanica di Tempora](./Adventures/Agent/1-Beginner/The-Clockwork-Town-of-Tempora-Agent.md)** - Nella città meccanica di Tempora, tutto funziona a orologeria e con tempistiche precise. Al cuore della città c'è la Grande Torre dell'Orologio, responsabile del mantenimento dell'orario per tutte le attività della città. Tuttavia, nel corso degli anni, alcuni orologi più piccoli della città hanno iniziato a derivare dall'orario accurato.
+- **[La foresta magica di Algora](./Adventures/Agent/1-Beginner/The-Magical-Forest-of-Algora-Agent.md)** - Nel profondo della Foresta incantata di Algora, due creature mistiche, il Lox e il Faelis, eseguono una danza sacra ogni millennio. Questa danza non è solo per celebrare ma è un rituale per portare equilibrio alla foresta.
 
 #### Avventure intermedie
 
-- [L'allineamento celestiale di Lumoria](./Adventures/2-Intermediate/it-IT/The-Celestial-Alignment-of-Lumoria.md)
-- [Il duello leggendario di Stonevale](./Adventures/2-Intermediate/it-IT/The-Legendary-Duel-of-Stonevale.md)
-- [I rotoli di Eldoria](./Adventures/2-Intermediate/it-IT/The-Scrolls-of-Eldoria.md)
+- **[L'allineamento celestiale di Lumoria](./Adventures/Agent/2-Intermediate/The-Celestial-Alignment-of-Lumoria-Agent.md)** - Nella vasta distesa delle Nebulose Galaxia, un fenomeno raro sta per verificarsi nel sistema stellare di Lumoria. I pianeti, che ruotano attorno al Sole Lumoriano, si stanno allineando in una danza celestiale che accade solo una volta ogni pochi millenni. Questo allineamento ha un effetto unico su come la luce dal Sole Lumoriano raggiunge ogni pianeta.
+- **[Il duello leggendario di Stonevale](./Adventures/Agent/2-Intermediate/The-Legendary-Duel-of-Stonevale-Agent.md)** - Nel regno mistico di Stonevale, due guerrieri, Rok e Papyra, sono scelti per un duello che determina il destino delle loro tribù per il prossimo secolo. L'arena, conosciuta come Scissoria, è dove ogni mossa porta peso e conseguenze.
+- **[I rotoli di Eldoria](./Adventures/Agent/2-Intermediate/The-Scrolls-of-Eldoria-Agent.md)** - Nella terra incantata di Eldoria, antichi rotoli contengono i segreti dell'universo. Questi rotoli, tuttavia, furono dispersi e protetti dagli Anziani usando potenti incantesimi. Questi incantesimi nascondevano i segreti all'interno dei rotoli, aggiungendo strati di informazioni fuorvianti per scoraggiare occhi indiscreti. Nel tempo, questi rotoli furono digitalizzati e conservati nella Grande Biblioteca Eldoriana, accessibile solo attraverso la Rete di Conoscenza Eldoriana.
 
 #### Avventure avanzate
 
-- [L'arena di ingorgo di Mythos](./Adventures/3-Advanced/it-IT/The-Gridlock-Arena-of-Mythos.md)
+- **[L'arena di ingorgo di Mythos](./Adventures/Agent/3-Advanced/The-Gridlock-Arena-of-Mythos-Agent.md)** - Nella terra mistica di Mythos, creature di vari regni si riuniscono per combattere nell'Arena di Ingorgo, una griglia simile agli scacchi dove strategia, potere e astuzia sono testati. Ogni creatura ha la sua mossa, potere e strategia unici.
+
+---
+
+## 💬 Avventure in Modalità Ask
+
+*Collaborazione interattiva con guida passo dopo passo e apprendimento*
+
+#### Avventure per principianti
+
+- **[La città meccanica di Tempora](./Adventures/Ask/1-Beginner/it-IT/The-Clockwork-Town-of-Tempora-Ask.md)** - Nella città meccanica di Tempora, tutto funziona a orologeria e con tempistiche precise. Al cuore della città c'è la Grande Torre dell'Orologio, responsabile del mantenimento dell'orario per tutte le attività della città. Tuttavia, nel corso degli anni, alcuni orologi più piccoli della città hanno iniziato a derivare dall'orario accurato.
+- **[La foresta magica di Algora](./Adventures/Ask/1-Beginner/it-IT/The-Magical-Forest-of-Algora-Ask.md)** - Nel profondo della Foresta incantata di Algora, due creature mistiche, il Lox e il Faelis, eseguono una danza sacra ogni millennio. Questa danza non è solo per celebrare ma è un rituale per portare equilibrio alla foresta.
+
+#### Avventure intermedie
+
+- **[L'allineamento celestiale di Lumoria](./Adventures/Ask/2-Intermediate/it-IT/The-Celestial-Alignment-of-Lumoria-Ask.md)** - Nella vasta distesa delle Nebulose Galaxia, un fenomeno raro sta per verificarsi nel sistema stellare di Lumoria. I pianeti, che ruotano attorno al Sole Lumoriano, si stanno allineando in una danza celestiale che accade solo una volta ogni pochi millenni. Questo allineamento ha un effetto unico su come la luce dal Sole Lumoriano raggiunge ogni pianeta.
+- **[Il duello leggendario di Stonevale](./Adventures/Ask/2-Intermediate/it-IT/The-Legendary-Duel-of-Stonevale-Ask.md)** - Nel regno mistico di Stonevale, due guerrieri, Rok e Papyra, sono scelti per un duello che determina il destino delle loro tribù per il prossimo secolo. L'arena, conosciuta come Scissoria, è dove ogni mossa porta peso e conseguenze.
+- **[I rotoli di Eldoria](./Adventures/Ask/2-Intermediate/it-IT/The-Scrolls-of-Eldoria-Ask.md)** - Nella terra incantata di Eldoria, antichi rotoli contengono i segreti dell'universo. Questi rotoli, tuttavia, furono dispersi e protetti dagli Anziani usando potenti incantesimi. Questi incantesimi nascondevano i segreti all'interno dei rotoli, aggiungendo strati di informazioni fuorvianti per scoraggiare occhi indiscreti. Nel tempo, questi rotoli furono digitalizzati e conservati nella Grande Biblioteca Eldoriana, accessibile solo attraverso la Rete di Conoscenza Eldoriana.
+
+#### Avventure avanzate
+
+- **[L'arena di ingorgo di Mythos](./Adventures/Ask/3-Advanced/it-IT/The-Gridlock-Arena-of-Mythos-Ask.md)** - Nella terra mistica di Mythos, creature di vari regni si riuniscono per combattere nell'Arena di Ingorgo, una griglia simile agli scacchi dove strategia, potere e astuzia sono testati. Ogni creatura ha la sua mossa, potere e strategia unici.
 
 ### 3. Inizia a programmare
 
