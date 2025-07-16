@@ -65,6 +65,7 @@ GitHub Copilot offers three powerful interaction modes:
 #### Advanced Adventures
 
 - **[The Gridlock Arena of Mythos](./Adventures/Agent/3-Advanced/The-Gridlock-Arena-of-Mythos-Agent.md)** - In the mystical land of Mythos, creatures from various realms come together to battle in the Gridlock Arena, a chess-like grid where strategy, power, and cunning are tested. Each creature has its unique move, power, and strategy.
+- **[The Knowledge Cartographer](./Adventures/Agent/3-Advanced/The-Knowledge-Cartographer-Agent-MCP.md)** - In the vast digital expanse of the Akashic Archives, ancient knowledge fragments are scattered across countless web domains. As a Knowledge Cartographer, you'll build a system that combines web scraping with intelligent knowledge organization using GitHub Copilot Agent Mode and MCP (Model Context Protocol) tools.
 
 ---
 

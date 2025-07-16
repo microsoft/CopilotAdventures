@@ -65,6 +65,7 @@ GitHub Copilot offre tre potenti modalità di interazione:
 #### Avventure avanzate
 
 - **[L'arena di ingorgo di Mythos](./Adventures/Agent/3-Advanced/The-Gridlock-Arena-of-Mythos-Agent.md)** - Nella terra mistica di Mythos, creature di vari regni si riuniscono per combattere nell'Arena di Ingorgo, una griglia simile agli scacchi dove strategia, potere e astuzia sono testati. Ogni creatura ha la sua mossa, potere e strategia unici.
+- **[Il Cartografo della Conoscenza](./Adventures/Agent/3-Advanced/The-Knowledge-Cartographer-Agent-MCP.md)** - Nella vasta distesa digitale degli Archivi Akashici, antichi frammenti di conoscenza sono sparsi in innumerevoli domini web. Come Cartografo della Conoscenza, costruirai un sistema che combina web scraping con organizzazione intelligente della conoscenza utilizzando GitHub Copilot Agent Mode e strumenti MCP (Model Context Protocol).
 
 ---
 
