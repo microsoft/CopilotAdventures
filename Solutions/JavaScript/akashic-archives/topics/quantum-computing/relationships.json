@@ -1,0 +1,18 @@
+{
+  "quantum bit <-> superposition": {
+    "strength": 3,
+    "type": "enables"
+  },
+  "quantum bit <-> entanglement": {
+    "strength": 2,
+    "type": "enables"
+  },
+  "superposition <-> quantum gate": {
+    "strength": 2,
+    "type": "implements"
+  },
+  "quantum computing <-> Shor's algorithm": {
+    "strength": 3,
+    "type": "includes"
+  }
+}

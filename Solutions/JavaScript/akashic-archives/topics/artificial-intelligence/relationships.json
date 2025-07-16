@@ -1,0 +1,18 @@
+{
+  "neural networks <-> deep learning": {
+    "strength": 4,
+    "type": "subset"
+  },
+  "deep learning <-> gradient descent": {
+    "strength": 3,
+    "type": "uses"
+  },
+  "transformer architecture <-> attention": {
+    "strength": 3,
+    "type": "implements"
+  },
+  "AI <-> ethical AI": {
+    "strength": 2,
+    "type": "requires"
+  }
+}

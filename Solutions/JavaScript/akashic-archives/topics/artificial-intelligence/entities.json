@@ -1,0 +1,53 @@
+{
+  "neural networks": {
+    "frequency": 4,
+    "sources": [
+      "ai-intro",
+      "deep-learning"
+    ],
+    "concepts": [
+      "machine learning",
+      "pattern recognition"
+    ]
+  },
+  "deep learning": {
+    "frequency": 3,
+    "sources": [
+      "ai-intro",
+      "deep-learning"
+    ],
+    "concepts": [
+      "machine learning"
+    ]
+  },
+  "gradient descent": {
+    "frequency": 2,
+    "sources": [
+      "optimization"
+    ],
+    "concepts": [
+      "optimization",
+      "algorithms"
+    ]
+  },
+  "transformer architecture": {
+    "frequency": 2,
+    "sources": [
+      "nlp-paper"
+    ],
+    "concepts": [
+      "attention",
+      "language models"
+    ]
+  },
+  "ethical AI": {
+    "frequency": 1,
+    "sources": [
+      "ethics-guide"
+    ],
+    "concepts": [
+      "ethics",
+      "governance"
+    ]
+  }
+}

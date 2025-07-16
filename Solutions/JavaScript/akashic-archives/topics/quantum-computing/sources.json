@@ -1,0 +1,17 @@
+{
+  "mit-intro": {
+    "url": "https://mit.edu/quantum-intro",
+    "title": "MIT Quantum Computing Introduction",
+    "size": "4.2KB"
+  },
+  "quantum-basics": {
+    "url": "https://quantum-basics.org",
+    "title": "Quantum Computing Fundamentals",
+    "size": "3.1KB"
+  },
+  "cryptography-paper": {
+    "url": "https://crypto-journal.com/shor",
+    "title": "Shor's Algorithm in Practice",
+    "size": "5.8KB"
+  }
+}

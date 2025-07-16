@@ -1,0 +1,17 @@
+{
+  "ai-intro": {
+    "url": "https://ai-course.stanford.edu",
+    "title": "Introduction to AI",
+    "size": "6.4KB"
+  },
+  "deep-learning": {
+    "url": "https://deeplearning.ai/fundamentals",
+    "title": "Deep Learning Fundamentals",
+    "size": "8.2KB"
+  },
+  "nlp-paper": {
+    "url": "https://arxiv.org/transformer-paper",
+    "title": "Attention Is All You Need",
+    "size": "12.1KB"
+  }
+}

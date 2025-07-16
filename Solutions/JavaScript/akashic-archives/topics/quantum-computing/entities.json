@@ -1,0 +1,52 @@
+{
+  "quantum bit": {
+    "frequency": 3,
+    "sources": [
+      "mit-intro",
+      "quantum-basics"
+    ],
+    "concepts": [
+      "quantum mechanics",
+      "computation"
+    ]
+  },
+  "superposition": {
+    "frequency": 2,
+    "sources": [
+      "mit-intro"
+    ],
+    "concepts": [
+      "quantum mechanics"
+    ]
+  },
+  "entanglement": {
+    "frequency": 2,
+    "sources": [
+      "mit-intro",
+      "quantum-theory"
+    ],
+    "concepts": [
+      "quantum mechanics"
+    ]
+  },
+  "quantum gate": {
+    "frequency": 1,
+    "sources": [
+      "quantum-circuits"
+    ],
+    "concepts": [
+      "computation",
+      "quantum mechanics"
+    ]
+  },
+  "Shor's algorithm": {
+    "frequency": 2,
+    "sources": [
+      "cryptography-paper"
+    ],
+    "concepts": [
+      "cryptography",
+      "algorithms"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "servers": {
+      "firecrawl": {
+         "command": "npx",
+         "args": [
+            "-y", 
+            "firecrawl-mcp"
+         ],
+         "env": {
+            "FIRECRAWL_API_KEY": "${input:fireCrawlApiKey}"
+         }
+      },
+      "filesystem": {
+         "command": "npx",
+         "args": [
+            "-y",
+            "@modelcontextprotocol/server-filesystem", 
+            "${workspaceFolder}"
+         ]
+      }
+   },
+   "inputs": [
+      {
+         "type": "promptString",
+         "id": "fireCrawlApiKey",
+         "description": "Firecrawl API Key",
+         "password": true
+      }
+   ]
+}
