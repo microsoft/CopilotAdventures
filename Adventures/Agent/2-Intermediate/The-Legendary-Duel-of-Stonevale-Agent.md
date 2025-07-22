@@ -31,6 +31,14 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
+### Agent Mode Skills You'll Master:
+- 🎯 **Game Logic Implementation**: Having AI create complete game systems with rules
+- 🔄 **State Management**: Building systems that track complex game states
+- 🧪 **Scoring Systems**: Implementing custom point calculation algorithms
+- 📚 **Battle Simulation**: Creating realistic combat and duel mechanics
+- 🛠️ **Interactive Storytelling**: Building engaging narrative-driven applications
+- 🔧 **Data Analysis**: Generating statistics and performance analytics
+
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.
@@ -117,7 +125,8 @@ Enhance the legendary duel system with these features:
 
 ### Expected Output
 
-Your completed system should produce output similar to:
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
+
 ```
 ⚔️ Welcome to the Legendary Duel of Stonevale! ⚔️
 

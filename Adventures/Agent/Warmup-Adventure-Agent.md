@@ -36,6 +36,14 @@ Before starting this adventure, you'll need to perform the following steps:
 2. **Open the Chat panel** - Select the GitHub Copilot icon in the top bar or use `Ctrl+Alt+I` / `⌃⌘I`.
 3. **Select "Agent" mode** from the dropdown at the bottom of the Chat panel.
 
+### Agent Mode Skills You'll Learn:
+- 🎯 **Comprehensive Prompting**: Writing detailed prompts for complex, multi-step tasks
+- 🔄 **AI Pair Programming**: Iterating with an autonomous AI partner that can think strategically
+- 🧪 **Autonomous Testing**: Leveraging AI to create and run comprehensive test suites
+- 📚 **Documentation Generation**: Getting production-ready code with complete documentation
+- 🛠️ **Project Orchestration**: Managing entire project lifecycles through AI collaboration
+- 🔧 **Error Resolution**: Working with AI to automatically detect and fix issues
+
 ## Your First Agent Mode Adventure: The Chamber of Echoes
 
 Let's experience the power of autonomous AI programming!
@@ -130,9 +138,9 @@ Enhance the Echo Chamber application with these advanced features:
 Make it production-ready with proper error handling, logging, and user experience.
 ```
 
-### Expected Results
+### Expected Output Example
 
-Your completed system should produce output similar to:
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
 
 ```
 🏰 Welcome to the Echo Chamber of Echo Castle! 🏰
@@ -151,9 +159,21 @@ Analyzing the sequence: [3, 6, 9, 12]
 
 ✨ The treasure of Echo Castle is revealed! ✨
    You have successfully predicted the chamber's echo!
+
+🧪 Testing with additional sequences:
+
+Test 1: [5, 10, 15] → Next: 20
+Test 2: [100, 90, 80, 70] → Next: 60
+Test 3: [1, 4, 7, 10, 13] → Next: 16
 ```
 
-### Agent Mode vs. "Ask Mode" in Copilot: Key Differences
+**Verification Checklist:**
+- ✅ Correctly predicts next number (15) for the sample sequence
+- ✅ Includes magical/fantasy themed output
+- ✅ Handles multiple test sequences
+- ✅ Shows step-by-step reasoning
+- ✅ Stores results in "memories" array
+- ✅ Includes proper error handling
 
 | Ask Mode | Agent Mode |
 |-------------------|------------|
@@ -161,6 +181,8 @@ Analyzing the sequence: [3, 6, 9, 12]
 | **Manual file management** | **Automatic project structure** |
 | **User drives each step** | **Autonomous task execution** |
 | **Code completion** | **End-to-end solutions** |
+| **Reactive assistance** | **Proactive problem solving** |
+| **Single-file focus** | **Multi-file coordination** |
 
 ### Advanced Agent Mode Tips
 
@@ -207,11 +229,39 @@ Analyzing the sequence: [3, 6, 9, 12]
 
 If Agent Mode isn't working as expected:
 
+**Common Issues & Solutions:**
+
+🔧 **Agent not creating files**
+- Check your workspace permissions
+- Ensure you're in a valid project directory
+- Approve file creation when prompted
+
+🔧 **Incomplete implementation**
+- Your prompt may need more detail - be more comprehensive
+- Add specific success criteria and requirements
+- Include examples of expected behavior
+
+🔧 **Tool confirmation needed**
+- Agent Mode requires your approval for tool usage
+- Click "Allow" when prompted for file operations
+- Review what tools will be used before approving
+
+🔧 **Agent stops mid-task**
+- May have hit the 128 tool limit per request
+- Break complex tasks into smaller chunks
+- Continue with a follow-up prompt
+
+**Setup Verification:**
 1. **Check Prerequisites**: Ensure you're using a recent version of VS Code
-3. **Mode Selection**: Make sure "Agent" is selected in the Chat dropdown
-4. **Authentication**: Ensure you're signed in to GitHub with Copilot access
-5. **Clear Instructions**: Provide detailed and specific requirements
-6. **Tool Permissions**: Approve tool usage if prompted (assuming you trust the tools)
+2. **Mode Selection**: Make sure "Agent" is selected in the Chat dropdown
+3. **Authentication**: Ensure you're signed in to GitHub with Copilot access
+4. **Clear Instructions**: Provide detailed and specific requirements
+5. **Tool Permissions**: Approve tool usage if prompted (assuming you trust the tools)
+
+**Pro Tips:**
+- Start with smaller tasks to get familiar with Agent Mode
+- Be very specific about what "done" looks like
+- Include testing and validation requirements in your prompts
 
 ### Echo Castle's Hidden Treasure is Now Yours!
 

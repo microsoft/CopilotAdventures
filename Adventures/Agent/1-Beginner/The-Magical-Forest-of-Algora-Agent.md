@@ -31,6 +31,14 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
+### Agent Mode Skills You'll Learn:
+- 🎯 **Comprehensive Prompting**: Writing detailed prompts for complex, multi-step tasks
+- 🔄 **AI Pair Programming**: Iterating with an autonomous AI partner that can think strategically
+- 🧪 **Autonomous Testing**: Leveraging AI to create and run comprehensive test suites
+- 📚 **Documentation Generation**: Getting production-ready code with complete documentation
+- 🛠️ **Project Orchestration**: Managing entire project lifecycles through AI collaboration
+- 🔧 **Error Resolution**: Working with AI to automatically detect and fix issues
+
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.
@@ -113,9 +121,10 @@ Enhance the magical dance system with these features:
 5. Create unit tests for the dance simulation logic
 ```
 
-### Expected Output
+### Expected Output Example
 
-Your completed system should produce output similar to:
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
+
 ```
 🌲 Welcome to the Magical Forest of Algora! 🌲
 
@@ -126,38 +135,45 @@ Lox performs: Twirl
 Faelis performs: Spin
 Combined effect: Mystical energy swirls through the trees
 
-Forest State: ✨ Enchanted glow surrounds the forest
+Forest State: ✨ Enchanted glow
 
 === Sequence 2 ===
 Lox performs: Leap
 Faelis performs: Twirl
 Combined effect: Magical harmony resonates through the woodland
 
-Forest State: ✨🎵 Enchanted glow with harmonious melodies
+Forest State: ✨🎵 Enchanted glow, harmonious melodies
 
 === Sequence 3 ===
 Lox performs: Spin
 Faelis performs: Leap
 Combined effect: 🌈 A magnificent rainbow appears in the sky!
 
-Forest State: ✨🎵🌈 Enchanted glow, melodies, and rainbow
+Forest State: ✨🎵🌧️🌈 Enchanted glow, harmonious melodies, rainbow, gentle rain
 
-=== Sequence 4 ===
-Lox performs: Twirl
-Faelis performs: Leap
-Combined effect: Gentle winds carry magical pollen
+Forest Visualization:
+  💧 💧 💧
+🌈
 
-Forest State: ✨🎵🌈💨 Full magical transformation
-
-=== Sequence 5 ===
-Lox performs: Leap
-Faelis performs: Spin
-Combined effect: 🌧️ Gentle magical rain begins to fall
-
-Forest State: ✨🎵🌈💨🌧️ Complete magical balance achieved!
+    🌲    🌳    🌲
+  🌿  🍄    🍄  🌿
+🌱      ✨🦋✨      🌱
 
 🌟 The millennium dance is complete! The Forest of Algora is in perfect harmony! 🌟
+
+🎭 Final Dance Statistics:
+Total sequences performed: 5
+Magical effects triggered: 5
+Forest transformations: 5
 ```
+
+**Verification Checklist:**
+- ✅ Simulates 5 sequences with Lox and Faelis moves
+- ✅ Tracks cumulative forest state changes
+- ✅ Includes ASCII art forest visualizations
+- ✅ Shows magical effects for each dance combination
+- ✅ Provides final statistics and completion message
+- ✅ Handles move validation and error cases
 
 ### Agent Mode Tips
 
@@ -200,15 +216,43 @@ Forest State: ✨🎵🌈💨🌧️ Complete magical balance achieved!
 - You can interrupt or pause requests at any time
 - Always review suggested edits before accepting
 
-### Troubleshooting
+### Troubleshooting Agent Mode
 
-If Agent Mode isn't working:
+If Agent Mode isn't working as expected:
 
+**Common Issues & Solutions:**
+
+🔧 **Agent not creating files**
+- Check your workspace permissions
+- Ensure you're in a valid project directory
+- Approve file creation when prompted
+
+🔧 **Incomplete implementation**
+- Your prompt may need more detail - be more comprehensive
+- Add specific success criteria and requirements
+- Include examples of expected behavior
+
+🔧 **Tool confirmation needed**
+- Agent Mode requires your approval for tool usage
+- Click "Allow" when prompted for file operations
+- Review what tools will be used before approving
+
+🔧 **Agent stops mid-task**
+- May have hit the 128 tool limit per request
+- Break complex tasks into smaller chunks
+- Continue with a follow-up prompt
+
+**Setup Verification:**
 1. **Check VS Code version**: Ensure you're using a recent version of VS Code
 2. **Verify settings**: Confirm `chat.agent.enabled` is checked
 3. **Check mode selection**: Make sure "Agent" is selected in the Chat dropdown
 4. **Sign in**: Ensure you're signed in to GitHub with Copilot access
 5. **Tool Permissions**: Approve tool usage when prompted
+
+**Pro Tips:**
+- Start with smaller tasks to get familiar with Agent Mode
+- Be very specific about what "done" looks like
+- Include testing and validation requirements in your prompts
 
 ### What's Next?
 

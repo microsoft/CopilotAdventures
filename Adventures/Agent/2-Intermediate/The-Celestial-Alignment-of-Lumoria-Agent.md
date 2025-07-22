@@ -31,6 +31,14 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
+### Agent Mode Skills You'll Master:
+- 🎯 **Complex Algorithm Design**: Having AI create sophisticated shadow calculation systems
+- 🔄 **Multi-step Problem Solving**: Breaking down celestial mechanics into code
+- 🧪 **Data Structure Management**: Managing planetary data and relationship calculations
+- 📚 **Scientific Computing**: Implementing real-world physics simulations
+- 🛠️ **Visualization Systems**: Creating visual representations of complex data
+- 🔧 **Edge Case Handling**: Managing astronomical boundary conditions
+
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.
@@ -121,31 +129,49 @@ Enhance the celestial alignment system with these features:
 6. Add support for different star systems with custom planets
 ```
 
-### Expected Output
+### Expected Output Example
 
-Your completed system should produce output similar to:
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
+
 ```
-🌟 Lumoria Star System - Celestial Alignment Analysis 🌟
+🌌 Celestial Alignment of Lumoria - Light Intensity Analysis 🌌
 
-Analyzing light intensity during the rare planetary alignment...
+🔬 Analyzing planetary positions and shadow effects...
 
-Planetary Data (sorted by distance from Lumorian Sun):
-================================
-🪐 Mercuria  | Distance: 0.4 AU  | Size: 4,879 km
-🪐 Venusia   | Distance: 0.7 AU  | Size: 12,104 km  
-🪐 Earthia   | Distance: 1.0 AU  | Size: 12,742 km
-🪐 Marsia    | Distance: 1.5 AU  | Size: 6,779 km
+🌟 Solar System Alignment:
 
-Light Intensity Results:
-================================
-☀️ Mercuria:  Full Light (No obstructions)
-🌕 Venusia:   Full Light (No obstructions)  
-🌗 Earthia:   Partial Light (Behind smaller planet Mercuria)
-🌑 Marsia:    None (Behind larger planets Venusia and Earthia)
+🌟 Lumorian Sun
+────🪐 Mercuria ☀️
+───────🪐 Venusia 🌤️
+──────────🪐 Earthia 🌤️
+───────────────🪐 Marsia 🌑
 
-🌌 Celestial alignment analysis complete!
-   2 planets in full light, 1 in partial light, 1 in shadow
+📊 Detailed Light Intensity Results:
+
+Planet      | Distance (AU) | Size (km) | Light Intensity | Explanation
+──────────────────────────────────────────────────────────────────────────────────────────
+Mercuria    | 0.4           | 4879      | Full            | Closest to sun - no shadows possible
+Venusia     | 0.7           | 12104     | Partial         | Smaller planets create partial shadow
+Earthia     | 1             | 12742     | Partial         | Smaller planets create partial shadow
+Marsia      | 1.5           | 6779      | None (Multiple Shadows) | Multiple larger planets (2) create complete shadow
+
+📈 Alignment Summary:
+Full: 1 planet(s)
+Partial: 2 planet(s)
+None (Multiple Shadows): 1 planet(s)
+
+🌑 Most affected planet: Marsia (None (Multiple Shadows))
+
+✨ The celestial alignment analysis is complete! ✨
 ```
+
+**Verification Checklist:**
+- ✅ Correctly sorts planets by distance from sun
+- ✅ Calculates light intensity based on shadow rules
+- ✅ Identifies Marsia as having "None (Multiple Shadows)"
+- ✅ Shows visual solar system alignment
+- ✅ Provides detailed explanations for each result
+- ✅ Includes comprehensive analysis statistics
 
 ### Agent Mode Tips
 
@@ -188,15 +214,43 @@ Light Intensity Results:
 - You can interrupt or pause requests at any time
 - Always review suggested edits before accepting
 
-### Troubleshooting
+### Troubleshooting Agent Mode
 
-If Agent Mode isn't working:
+If Agent Mode isn't working as expected:
 
+**Common Issues & Solutions:**
+
+🔧 **Agent not creating files**
+- Check your workspace permissions
+- Ensure you're in a valid project directory
+- Approve file creation when prompted
+
+🔧 **Incomplete implementation**
+- Your prompt may need more detail - be more comprehensive
+- Add specific success criteria and requirements
+- Include examples of expected behavior
+
+🔧 **Tool confirmation needed**
+- Agent Mode requires your approval for tool usage
+- Click "Allow" when prompted for file operations
+- Review what tools will be used before approving
+
+🔧 **Agent stops mid-task**
+- May have hit the 128 tool limit per request
+- Break complex tasks into smaller chunks
+- Continue with a follow-up prompt
+
+**Setup Verification:**
 1. **Check VS Code version**: Ensure you're using a recent version of VS Code
 2. **Verify settings**: Confirm `chat.agent.enabled` is checked
 3. **Check mode selection**: Make sure "Agent" is selected in the Chat dropdown
 4. **Sign in**: Ensure you're signed in to GitHub with Copilot access
 5. **Tool Permissions**: Approve tool usage when prompted
+
+**Pro Tips:**
+- Start with smaller tasks to get familiar with Agent Mode
+- Be very specific about what "done" looks like
+- Include testing and validation requirements in your prompts
 
 ### What's Next?
 

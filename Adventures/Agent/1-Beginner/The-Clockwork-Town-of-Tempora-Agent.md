@@ -31,6 +31,14 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
+### Agent Mode Skills You'll Learn:
+- 🎯 **Comprehensive Prompting**: Writing detailed prompts for complex, multi-step tasks
+- 🔄 **AI Pair Programming**: Iterating with an autonomous AI partner that can think strategically
+- 🧪 **Autonomous Testing**: Leveraging AI to create and run comprehensive test suites
+- 📚 **Documentation Generation**: Getting production-ready code with complete documentation
+- 🛠️ **Project Orchestration**: Managing entire project lifecycles through AI collaboration
+- 🔧 **Error Resolution**: Working with AI to automatically detect and fix issues
+
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.
@@ -105,9 +113,10 @@ Enhance the clock system with these features:
 4. Generate documentation explaining the system
 ```
 
-### Expected Output
+### Expected Output Example
 
-Your completed system should produce output similar to:
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
+
 ```
 🕐 Tempora Clock Synchronization System 🕐
 Grand Clock Tower Time: 15:00
@@ -118,8 +127,34 @@ Clock 2 (15:05): +5 minutes (ahead)
 Clock 3 (15:00): 0 minutes (synchronized)
 Clock 4 (14:40): -20 minutes (behind)
 
-Summary: 2 clocks need adjustment
+Summary: 3 clocks need adjustment
+
+🏛️ Enhanced Tempora Clock Analysis 🏛️
+
+🗼 Grand Clock Tower:
+    ⏰ 15:00
+     12
+   9  |  3
+     6
+  (3:00)
+
+🏘️ Town Clocks:
+--- Clock 1 ---
+    ⏰ 14:45
+     12
+   9  |  3
+     6
+  (2:45)
+⏰ 15 min BEHIND
 ```
+
+**Verification Checklist:**
+- ✅ Correctly calculates time differences: [-15, +5, 0, -20]
+- ✅ Identifies 3 clocks needing adjustment
+- ✅ Includes ASCII clock visualizations
+- ✅ Shows clockwork/steampunk themed output
+- ✅ Handles time format validation
+- ✅ Provides clear status for each clock
 
 ### Agent Mode Tips
 
@@ -162,15 +197,43 @@ Summary: 2 clocks need adjustment
 - You can interrupt or pause requests at any time
 - Always review suggested edits before accepting
 
-### Troubleshooting
+### Troubleshooting Agent Mode
 
-If Agent Mode isn't working:
+If Agent Mode isn't working as expected:
 
+**Common Issues & Solutions:**
+
+🔧 **Agent not creating files**
+- Check your workspace permissions
+- Ensure you're in a valid project directory
+- Approve file creation when prompted
+
+🔧 **Incomplete implementation**
+- Your prompt may need more detail - be more comprehensive
+- Add specific success criteria and requirements
+- Include examples of expected behavior
+
+🔧 **Tool confirmation needed**
+- Agent Mode requires your approval for tool usage
+- Click "Allow" when prompted for file operations
+- Review what tools will be used before approving
+
+🔧 **Agent stops mid-task**
+- May have hit the 128 tool limit per request
+- Break complex tasks into smaller chunks
+- Continue with a follow-up prompt
+
+**Setup Verification:**
 1. **Check VS Code version**: Ensure you're using a recent version of VS Code
 2. **Verify settings**: Confirm `chat.agent.enabled` is checked
 3. **Check mode selection**: Make sure "Agent" is selected in the Chat dropdown
 4. **Sign in**: Ensure you're signed in to GitHub with Copilot access
 5. **Tool Permissions**: Approve tool usage when prompted
+
+**Pro Tips:**
+- Start with smaller tasks to get familiar with Agent Mode
+- Be very specific about what "done" looks like
+- Include testing and validation requirements in your prompts
 
 ### What's Next?
 

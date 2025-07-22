@@ -31,6 +31,14 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
+### Agent Mode Skills You'll Master:
+- 🎯 **Complex System Architecture**: Having AI design multi-component battle systems
+- 🔄 **2D Grid Programming**: Building spatial relationship and collision detection systems
+- 🧪 **Turn-based Logic**: Creating sophisticated game state management
+- 📚 **Algorithm Optimization**: Implementing efficient pathfinding and battle resolution
+- 🛠️ **Comprehensive Testing**: Building 100% test coverage for complex systems
+- 🔧 **Performance Analysis**: Creating benchmarks and optimization strategies
+
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.
@@ -130,7 +138,8 @@ Enhance the Gridlock Arena system with these advanced features:
 
 ### Expected Output
 
-Your completed system should produce output similar to:
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
+
 ```
 ⚔️ Welcome to the Gridlock Arena of Mythos! ⚔️
 

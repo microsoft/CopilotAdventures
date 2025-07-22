@@ -36,6 +36,14 @@ By completing this adventure with Agent Mode + MCP, you'll learn:
 - ✅ How to design autonomous research workflows
 - ✅ Best practices for MCP tool integration and error handling
 
+### Agent Mode + MCP Skills You'll Master:
+- 🎯 **MCP Tool Integration**: Extending AI capabilities with external tools and services
+- 🔄 **Web Research Automation**: Building systems that autonomously discover and extract knowledge
+- 🧪 **Knowledge Graph Construction**: Creating interconnected information networks
+- 📚 **Multi-source Data Fusion**: Combining information from web sources and local files
+- 🛠️ **Research Pipeline Design**: Building end-to-end knowledge discovery workflows
+- 🔧 **Tool Chain Orchestration**: Managing complex interactions between multiple MCP servers
+
 ### Setting Up Agent Mode with MCP
 
 1. **Open VS Code** and ensure you're signed in to GitHub with GitHub Copilot access.
@@ -234,7 +242,7 @@ Enhance the Knowledge Cartographer with these advanced MCP integrations:
 
 ### Expected Output
 
-Your completed system should produce output similar to. It's important to note that your output will depend upon the specific knowledge domains and content discovered during the scraping process, the model used in GitHub Copilot, and other factors.
+When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
 
 ```
 🗺️  Welcome to the Knowledge Cartographer! 🗺️
