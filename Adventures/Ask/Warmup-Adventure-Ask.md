@@ -1,7 +1,7 @@
 ## GitHub Copilot Warmup Adventure: Ask Mode Adventure
 
 <a href="#">
-    <img src="../Images/warm-up.jpg" style="width: 830px" />
+    <img src="../../Images/warm-up.jpg" style="width: 830px" />
 </a>
 
 GitHub Copilot is an AI pair programmer that helps you write better code. In this warm up adventure you'll get to know Copilot and try it out for yourself. Here are a few things you can do with GitHub Copilot:
@@ -15,8 +15,8 @@ GitHub Copilot is an AI pair programmer that helps you write better code. In thi
 - And more!
 
 If you're brand new to GitHub Copilot check out this video to learn more about the benefits it can bring to your development workflow. Once you've watched the video, come back here and choose an adventure to get started.
-    
-[![GitHub Copilot Video](../Images/copilot-video.png)](https://www.youtube.com/watch?v=Dlt-DCLHnxM)
+
+[![GitHub Copilot Video](../../Images/copilot-video.png)](https://www.youtube.com/watch?v=Dlt-DCLHnxM)
 
 ## Getting Started: Installing the GitHub Copilot Extension
 
@@ -40,7 +40,7 @@ If you don't currently have a GitHub Copilot license, you can:
 Let's get started with your first adventure!
 
 <a href="#">
-    <img src="../Images/echo-castle.jpg" style="width: 830px" />
+    <img src="../../Images/echo-castle.jpg" style="width: 830px" />
 </a>
 
 ### Background:
@@ -120,7 +120,7 @@ This solution uses JavaScript and [Node.js](https://nodejs.org). Feel free to us
 
 1. Enter `/doc` into the textbox that appears and press <kbd>Enter</kbd>. You should see a comment generated for the function.
 
-    ![inline chat in vs code](../Images/inline-chat.png)
+    ![inline chat in vs code](../../Images/inline-chat.png)
 
 1. Select `Accept` to accept the suggestion.
 
@@ -161,7 +161,7 @@ This solution uses JavaScript and [Node.js](https://nodejs.org). Feel free to us
 ## Echo Castle's Hidden Treasure is Now Yours!
 
 <a href="#">
-    <img src="../Images/echo-castle-treasure.jpg" style="width: 830px" />
+    <img src="../../Images/echo-castle-treasure.jpg" style="width: 830px" />
 </a>
 
 You've completed your first GitHub Copilot "warmup" adventure! Check out the other adventures located in the [Adventures](../Adventures) folder to see other ways GitHub Copilot can be used.

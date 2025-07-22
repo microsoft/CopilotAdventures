@@ -216,7 +216,7 @@ If Agent Mode isn't working as expected:
 ### Echo Castle's Hidden Treasure is Now Yours!
 
 <a href="#">
-    <img src="../Images/echo-castle-treasure.jpg" style="width: 830px" />
+    <img src="../../Images/echo-castle-treasure.jpg" style="width: 830px" />
 </a>
 
 You've completed your first GitHub Copilot Agent Mode adventure! You've experienced the power of autonomous AI programming that can:
