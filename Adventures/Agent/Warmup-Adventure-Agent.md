@@ -41,7 +41,7 @@ Before starting this adventure, you'll need to perform the following steps:
 Let's experience the power of autonomous AI programming!
 
 <a href="#">
-    <img src="../Images/echo-castle.jpg" style="width: 830px" />
+    <img src="../../Images/echo-castle.jpg" style="width: 830px" />
 </a>
 
 ### Background:
