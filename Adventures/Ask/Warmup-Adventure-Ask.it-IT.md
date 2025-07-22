@@ -1,7 +1,7 @@
 ## Avventura di riscaldamento di GitHub Copilot: Avventura Modalità Ask
 
 <a href="#">
-    <img src="../Images/warm-up.jpg" style="width: 830px" />
+    <img src="../../Images/warm-up.jpg" style="width: 830px" />
 </a>
 
 GitHub Copilot è uno strumento basato sull' AI che ti aiuta a scrivere un codice migliore. In questa avventura di riscaldamento avrai l'opportunità di conoscere Copilot e provarlo da solo. Ecco alcune cose che puoi fare con GitHub Copilot:
@@ -16,7 +16,7 @@ GitHub Copilot è uno strumento basato sull' AI che ti aiuta a scrivere un codic
 
 Se sei completamente nuovo a GitHub Copilot, guarda questo video per saperne di più sui vantaggi che può portare al tuo flusso di lavoro di sviluppo. Una volta che hai guardato il video, torna qui e scegli un'avventura per iniziare.
 
-[![Video di GitHub Copilot](../Images/copilot-video.png)](https://www.youtube.com/watch?v=Dlt-DCLHnxM)
+[![Video di GitHub Copilot](../../Images/copilot-video.png)](https://www.youtube.com/watch?v=Dlt-DCLHnxM)
 
 ## Iniziare: Installazione dell'estensione GitHub Copilot
 
@@ -40,7 +40,7 @@ Se attualmente non hai una licenza GitHub Copilot, puoi:
 Iniziamo con la tua prima avventura!
 
 <a href="#">
-    <img src="../Images/echo-castle.jpg" style="width: 830px" />
+    <img src="../../Images/echo-castle.jpg" style="width: 830px" />
 </a>
 
 ### Contesto:
@@ -119,7 +119,7 @@ Questa soluzione utilizza JavaScript e [Node.js](https://nodejs.org). Sentiti li
 
 1. Inserisci `/doc` nella casella di testo che appare e premi <kbd>Enter</kbd>. Dovresti vedere un commento generato per la funzione.
 
-    ![chat in linea in vs code](../Images/inline-chat.png)
+    ![chat in linea in vs code](../../Images/inline-chat.png)
 
 1. Seleziona `Accetta` per accettare il suggerimento.
 
@@ -160,7 +160,7 @@ Questa soluzione utilizza JavaScript e [Node.js](https://nodejs.org). Sentiti li
 ## Il tesoro nascosto del Castello Echo è ora tuo!
 
 <a href="#">
-    <img src="../Images/echo-castle-treasure.jpg" style="width: 830px" />
+    <img src="../../Images/echo-castle-treasure.jpg" style="width: 830px" />
 </a>
 
 Hai completato la tua prima avventura di "riscaldamento" di GitHub Copilot! Dai un'occhiata alle altre avventure situate nella cartella [Adventures](../Adventures) per vedere altri modi in cui GitHub Copilot può essere utilizzato.
