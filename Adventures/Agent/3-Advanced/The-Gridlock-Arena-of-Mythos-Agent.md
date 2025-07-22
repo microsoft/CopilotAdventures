@@ -31,14 +31,6 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
-### Agent Mode Skills You'll Master:
-- 🎯 **Complex System Architecture**: Having AI design multi-component battle systems
-- 🔄 **2D Grid Programming**: Building spatial relationship and collision detection systems
-- 🧪 **Turn-based Logic**: Creating sophisticated game state management
-- 📚 **Algorithm Optimization**: Implementing efficient pathfinding and battle resolution
-- 🛠️ **Comprehensive Testing**: Building 100% test coverage for complex systems
-- 🔧 **Performance Analysis**: Creating benchmarks and optimization strategies
-
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.

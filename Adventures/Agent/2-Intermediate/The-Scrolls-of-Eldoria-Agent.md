@@ -31,14 +31,6 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
-### Agent Mode Skills You'll Master:
-- 🎯 **Web API Integration**: Having AI create HTTP request systems and data fetching
-- 🔄 **Regular Expressions**: Building complex pattern matching and text processing
-- 🧪 **Data Parsing**: Extracting structured information from unstructured text
-- 📚 **Network Programming**: Handling web requests, timeouts, and error conditions
-- 🛠️ **Content Analysis**: Processing and analyzing remote data sources
-- 🔧 **Error Handling**: Managing network failures and data validation
-
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.

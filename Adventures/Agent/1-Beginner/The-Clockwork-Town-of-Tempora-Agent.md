@@ -31,14 +31,6 @@ By completing this adventure with Agent Mode, you'll learn:
 - ✅ The power of autonomous coding assistance for complete projects
 - ✅ Best practices for prompting Agent Mode effectively
 
-### Agent Mode Skills You'll Learn:
-- 🎯 **Comprehensive Prompting**: Writing detailed prompts for complex, multi-step tasks
-- 🔄 **AI Pair Programming**: Iterating with an autonomous AI partner that can think strategically
-- 🧪 **Autonomous Testing**: Leveraging AI to create and run comprehensive test suites
-- 📚 **Documentation Generation**: Getting production-ready code with complete documentation
-- 🛠️ **Project Orchestration**: Managing entire project lifecycles through AI collaboration
-- 🔧 **Error Resolution**: Working with AI to automatically detect and fix issues
-
 ### Setting Up Agent Mode
 
 1. **Open VS Code** and ensure you're signed in to GitHub.

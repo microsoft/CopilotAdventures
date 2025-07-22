@@ -36,13 +36,15 @@ Before starting this adventure, you'll need to perform the following steps:
 2. **Open the Chat panel** - Select the GitHub Copilot icon in the top bar or use `Ctrl+Alt+I` / `⌃⌘I`.
 3. **Select "Agent" mode** from the dropdown at the bottom of the Chat panel.
 
-### Agent Mode Skills You'll Learn:
-- 🎯 **Comprehensive Prompting**: Writing detailed prompts for complex, multi-step tasks
-- 🔄 **AI Pair Programming**: Iterating with an autonomous AI partner that can think strategically
-- 🧪 **Autonomous Testing**: Leveraging AI to create and run comprehensive test suites
-- 📚 **Documentation Generation**: Getting production-ready code with complete documentation
-- 🛠️ **Project Orchestration**: Managing entire project lifecycles through AI collaboration
-- 🔧 **Error Resolution**: Working with AI to automatically detect and fix issues
+### Learning Outcomes
+
+By completing this adventure with Agent Mode, you'll learn:
+
+- ✅ How to give high-level instructions to an AI agent
+- ✅ How Agent Mode breaks down complex tasks autonomously
+- ✅ How to iterate and refine solutions with an AI pair programmer
+- ✅ The power of autonomous coding assistance for complete projects
+- ✅ Best practices for prompting Agent Mode effectively
 
 ## Your First Agent Mode Adventure: The Chamber of Echoes
 
