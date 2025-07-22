@@ -68,6 +68,8 @@ Create a JavaScript game with the following rules:
   The stronger element wins the round based on the dominance rules above.
   If both choose the same element, it’s a draw—nature remains in balance.
 
+Create a text based version that works in the terminal
+
 Please create the project structure, write the code, and test it.
 ```
 
@@ -104,9 +106,9 @@ Enhance the the system with these features:
 
 When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
 
-```
-
-```
+<a href="#">
+    <img src="../../../Images/druid-test-outcome.png"  style="width: 830px" />
+</a>
 
 ### Agent Mode Tips
 
