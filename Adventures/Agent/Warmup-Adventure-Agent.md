@@ -204,7 +204,7 @@ Test 3: [1, 4, 7, 10, 13] → Next: 16
 4. **Testing Automation**: Have it create and run comprehensive test suites
 5. **Iterative Enhancement**: Build features incrementally through conversation
 
-#### When to Use Agent Mode vs. Regular Chat/Edit
+#### When to Use Agent Mode vs. Ask Mode
 
 **Use Agent Mode when:**
 - Creating new projects from scratch
@@ -213,7 +213,7 @@ Test 3: [1, 4, 7, 10, 13] → Next: 16
 - Working with unfamiliar technologies or frameworks
 - Building complex features that span multiple files
 
-**Use regular Chat/Edit when:**
+**Use Ask Mode when:**
 - Making small, targeted changes
 - Need quick code suggestions
 - Want faster response times

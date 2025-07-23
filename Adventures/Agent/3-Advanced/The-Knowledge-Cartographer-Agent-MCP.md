@@ -279,6 +279,12 @@ Your task: Navigate this treasure trove of interconnected wisdom.
        └── concepts: computation, quantum mechanics
 ```
 
+### Agent Mode Tips
+
+<a href="#">
+    <img src="../../../Images/agent-mode-tips.jpg"  style="width: 830px" />
+</a>
+
 ### Important MCP Considerations
 
 **Security and Privacy:**

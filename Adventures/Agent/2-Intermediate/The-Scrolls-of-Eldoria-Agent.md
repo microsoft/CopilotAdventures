@@ -148,7 +148,7 @@ When your Agent Mode implementation is complete, running the application should 
 ### Agent Mode Tips
 
 <a href="#">
-    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/agent-mode-tips.jpg"  style="width: 830px" />
 </a>
 
 #### Effective Prompting Strategies
@@ -165,7 +165,7 @@ When your Agent Mode implementation is complete, running the application should 
 3. **Iterate naturally**: Ask for improvements or modifications as needed
 4. **Learn from the process**: Observe how Agent Mode structures and solves problems
 
-#### When to Use Agent Mode vs. Regular Chat
+#### When to Use Agent Mode vs. Ask Mode
 
 - **Use Agent Mode when**:
   - Creating new projects from scratch
@@ -173,7 +173,7 @@ When your Agent Mode implementation is complete, running the application should 
   - Need autonomous problem-solving
   - Want comprehensive solutions
 
-- **Use regular Chat/Edit mode when**:
+- **Use Ask Mode when**:
   - Making small, targeted changes
   - Need quick suggestions
   - Want faster responses
