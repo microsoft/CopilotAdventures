@@ -30,7 +30,7 @@ git clone https://github.com/microsoft/copilotadventures
 
 #### New to GitHub Copilot?
 
-If you're new to GitHub Copilot, need to install the extensions, and want to learn how to get started using it, start with one of these warmup adventures:
+If you're new to GitHub Copilot and want to learn how to get started using it, start with one of these warmup adventures:
 
 - **[Warmup Adventure - Agent Mode](./Adventures/Agent/Warmup-Adventure-Agent.md)** - Learn GitHub Copilot's autonomous Agent Mode
 - **[Warmup Adventure - Ask Mode](./Adventures/Ask/Warmup-Adventure-Ask.md)** - Learn GitHub Copilot's Ask Mode
