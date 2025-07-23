@@ -204,20 +204,6 @@ Test 3: [1, 4, 7, 10, 13] → Next: 16
 4. **Testing Automation**: Have it create and run comprehensive test suites
 5. **Iterative Enhancement**: Build features incrementally through conversation
 
-#### When to Use Agent Mode vs. Ask Mode
-
-**Use Agent Mode when:**
-- Creating new projects from scratch
-- Need autonomous multi-step execution
-- Want comprehensive solutions with testing and documentation
-- Working with unfamiliar technologies or frameworks
-- Building complex features that span multiple files
-
-**Use Ask Mode when:**
-- Making small, targeted changes
-- Need quick code suggestions
-- Want faster response times
-- Making simple bug fixes or adjustments
 
 ### Important Agent Mode Considerations
 

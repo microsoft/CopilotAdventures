@@ -218,18 +218,6 @@ Final Board:
 3. **Iterate naturally**: Ask for improvements or modifications as needed
 4. **Learn from the process**: Observe how Agent Mode structures and solves problems
 
-#### When to Use Agent Mode vs. Ask Mode
-
-- **Use Agent Mode when**:
-  - Creating new projects from scratch
-  - Making changes across multiple files
-  - Need autonomous problem-solving
-  - Want comprehensive solutions
-
-- **Use Ask Mode when**:
-  - Making small, targeted changes
-  - Need quick suggestions
-  - Want faster responses
 
 ### Important Agent Mode Considerations
 
