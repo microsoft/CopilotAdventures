@@ -1,7 +1,7 @@
 ## The Scrolls of Eldoria: Ask Mode Adventure
 
 <a href="#">
-    <img src="../../Images/eldoria.jpg" style="width: 830px" />
+    <img src="../../../Images/eldoria.jpg" style="width: 830px" />
 </a>
 
 ### Background
@@ -54,7 +54,7 @@ You, a young sorcerer's apprentice, have been given the task to retrieve and dec
 ### GitHub Copilot Tips
 
 <a href="#">
-    <img src="../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
 </a>
 
 #### Use Copilot to improve efficiency

@@ -1,7 +1,7 @@
 ## The Celestial Alignment of Lumoria: Ask Mode Adventure
 
 <a href="#">
-    <img src="../../Images/lumoria.jpg" style="width: 830px" />
+    <img src="../../../Images/lumoria.jpg" style="width: 830px" />
 </a>
 
 ### Background
@@ -63,7 +63,7 @@ The planets aren't sorted by their distance from the Lumorian Sun so you'll need
 ### GitHub Copilot Tips
 
 <a href="#">
-    <img src="../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
 </a>
 
 First, you're going to need to get the planets into a data structure that you can work with.

@@ -1,7 +1,7 @@
 ## The Gridlock Arena of Mythos: Ask Mode Adventure
 
 <a href="#">
-   <img src="../../Images/mythos-arena-full.jpg" style="width: 830px" />
+   <img src="../../../Images/mythos-arena-full.jpg" style="width: 830px" />
 </a>
 
 ### Background
@@ -54,7 +54,7 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 
       
       <a href="#">
-         <img src="../../Images/mythos-board-example.png">
+         <img src="../../../Images/mythos-board-example.png">
       </a>
 
 ### Constraints
@@ -112,7 +112,7 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 ### GitHub Copilot Tips
 
 <a href="#">
-    <img src="../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
 </a>
 
 #### Use Copilot to improve efficiency
