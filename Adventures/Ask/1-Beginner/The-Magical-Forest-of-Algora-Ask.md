@@ -1,7 +1,7 @@
 ## The Magical Forest of Algora: Ask Mode Adventure
 
 <a href="#">
-    <img src="../../Images/algora-forest.jpg" style="width: 830px" />
+    <img src="../../../Images/algora-forest.jpg" style="width: 830px" />
 </a>
 
 ### Background
@@ -78,7 +78,7 @@ Your task is to simulate the dance between Lox and Faelis. Each creature has its
 ### GitHub Copilot Tips
 
 <a href="#">
-    <img src="../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
 </a>
 
 #### Use Copilot to improve efficiency

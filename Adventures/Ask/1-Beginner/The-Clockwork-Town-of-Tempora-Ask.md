@@ -1,7 +1,7 @@
 ## The Clockwork Town of Tempora: Ask Mode Adventure
 
 <a href="#">
-    <img src="../../Images/tempora-clocks.jpg"  style="width: 830px" />
+    <img src="../../../Images/tempora-clocks.jpg"  style="width: 830px" />
 </a>
 
 ### Background
@@ -55,7 +55,7 @@ Your task is to create a system that checks all the clocks in the town and synch
 ### GitHub Copilot Tips
 
 <a href="#">
-    <img src="../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
 </a>
 
 #### Use Copilot to improve efficiency

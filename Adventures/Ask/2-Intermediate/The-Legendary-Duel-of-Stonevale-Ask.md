@@ -1,7 +1,7 @@
 ## The Legendary Duel of Stonevale: Ask Mode Adventure
 
 <a href="#">
-    <img src="../../Images/stonevale.jpg" style="width: 830px" />
+    <img src="../../../Images/stonevale.jpg" style="width: 830px" />
 </a>
 
 ### Background
@@ -78,7 +78,7 @@ Your task is to simulate the duel between Rok and Papyra. Each warrior makes a s
 ### GitHub Copilot Tips
 
 <a href="#">
-    <img src="../../Images/copilot-tips.jpg"  style="width: 830px" />
+    <img src="../../../Images/copilot-tips.jpg"  style="width: 830px" />
 </a>
 
 #### Use Copilot to improve efficiency
