@@ -18,11 +18,11 @@ def simulate_battle(creatures):
         scores[name] = 0
 
     max_moves = len(creatures[0]['moves'])
-    for move in range(-1, max_moves):
-        render_grid(move, grid, scores, creatures)
-        if move == max_moves - 1:
-            break
-
+    
+    # Display initial board
+    render_grid(-1, grid, scores, creatures)
+    
+    for move in range(max_moves):
         # Clear the grid for this move
         for i in range(grid_size):
             for j in range(grid_size):
@@ -32,7 +32,7 @@ def simulate_battle(creatures):
         new_positions = []
         for creature in active_creatures:
             x, y = creature['start']
-            if move >= 0 and move < len(creature['moves']):
+            if move < len(creature['moves']):
                 dx, dy = directions[creature['moves'][move]]
                 x = max(0, min(grid_size - 1, x + dx))
                 y = max(0, min(grid_size - 1, y + dy))
@@ -85,6 +85,9 @@ def simulate_battle(creatures):
                         grid[x][y] = creature['icon']
                 new_active_creatures.append(creature)
         active_creatures = new_active_creatures
+        
+        # Render grid after movement and battles
+        render_grid(move, grid, scores, creatures)
 
     return scores
 
@@ -101,7 +104,10 @@ def render_grid(move, grid, scores, creatures):
         display_name = f"{creature['icon']} {name}" if creature else name
         scores_with_icons[display_name] = score
     
-    print('Scores:', scores_with_icons)
+    print('Scores: {')
+    for i, (name, score) in enumerate(scores_with_icons.items()):
+        print(f"  '{name}': {score}{',' if i < len(scores_with_icons) - 1 else ''}")
+    print('}')
     print('-----')
 
 creatures = [
@@ -112,10 +118,21 @@ creatures = [
     { 'name': "Wizard", 'start': [4, 1], 'moves': ["UP", "UP", "LEFT"], 'power': 6, 'icon': '🧙' }
 ]
 
+print('🏟️  Welcome to the Gridlock Arena of Mythos! 🏟️')
+print('Preparing for an epic battle between legendary creatures...')
+print()
+
 final_scores = simulate_battle(creatures)
 final_scores_with_icons = {}
 for name, score in final_scores.items():
     creature = next((c for c in creatures if c['name'] == name), None)
     display_name = f"{creature['icon']} {name}" if creature else name
     final_scores_with_icons[display_name] = score
-print(final_scores_with_icons)
+
+print('🏆 FINAL BATTLE RESULTS 🏆')
+print('{')
+for i, (name, score) in enumerate(final_scores_with_icons.items()):
+    print(f"  '{name}': {score}{',' if i < len(final_scores_with_icons) - 1 else ''}")
+print('}')
+print()
+print('The battle has concluded! May the strongest creature be victorious!')

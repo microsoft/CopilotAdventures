@@ -177,6 +177,7 @@ Create a complete Gridlock Arena battle simulation system for the mystical land 
     - Group creatures by destination position to detect collisions
     - Handle multi-creature battles correctly (not just 2-creature battles)
     - Use modern language features and follow current coding standards
+    - **Algorithm Flow**: Display initial board → For each move: calculate new positions → resolve battles → update grid → display results
 
 12. **Code Quality**:
     - Include comprehensive error handling and documentation
@@ -188,10 +189,16 @@ Create a complete Gridlock Arena battle simulation system for the mystical land 
     - Follow modern coding standards and best practices for your language
 
 **Language-Specific Modern Practices** (choose what applies):
-- **JavaScript/Node.js**: Use ES modules (import/export), create package.json with "type": "module"
-- **Python**: Use modern imports, type hints, and virtual environments
-- **C#**: Use modern C# features, proper namespaces, and .csproj structure
+- **JavaScript/Node.js**: Use ES6 modules (import/export), create package.json with "type": "module"
+- **Python**: Use modern Python with proper function definitions and data structures
+- **C#**: Use modern C# features, records, enums, and proper class structure
 - **Other languages**: Apply equivalent modern standards and tooling
+
+**Critical Implementation Notes for All Languages**:
+- Movement timing is crucial: render Initial Board first, then process each move and render results
+- Battle resolution must handle multi-creature collisions correctly
+- Score display should include creature emojis in quoted format
+- Final output should match the expected battle timing exactly
 
 IMPORTANT: If your output doesn't match the expected battle results in section 9, debug your movement logic. The battle timing is critical for the educational value of this adventure.
 ```

@@ -66,11 +66,12 @@ class BattleSimulator
         }
 
         var maxMoves = _creatures.Max(creature => creature.Moves.Length);
-        for (int move = InitialMove; move < maxMoves; move++)
+        
+        // Display initial board
+        RenderGrid(InitialMove, grid, scores, _creatures);
+        
+        for (int move = 0; move < maxMoves; move++)
         {
-            RenderGrid(move, grid, scores, _creatures);
-            if (move == maxMoves - 1) break;
-
             // Clear the grid for this move
             for (int i = 0; i < GridSize; i++)
             {
@@ -84,7 +85,7 @@ class BattleSimulator
             var newPositions = activeCreatures.Select(creature =>
             {
                 var position = creature.Start;
-                if (move < creature.Moves.Length && move >= 0)
+                if (move < creature.Moves.Length)
                 {
                     var (dx, dy) = Directions[creature.Moves[move]];
                     position = position.MoveBy(dx, dy, GridSize);
@@ -155,6 +156,9 @@ class BattleSimulator
                 }
                 return true;
             }).ToList();
+            
+            // Render grid after movement and battles
+            RenderGrid(move, grid, scores, _creatures);
         }
 
         return scores;
@@ -182,10 +186,14 @@ class BattleSimulator
             kvp => kvp.Value
         );
         
-        Console.Write("Scores: { ");
-        var scoreItems = scoresWithIcons.Select(kvp => $"{kvp.Key}: {kvp.Value}").ToArray();
-        Console.Write(string.Join(", ", scoreItems));
-        Console.WriteLine(" }");
+        Console.WriteLine("Scores: {");
+        var scoreItems = scoresWithIcons.ToArray();
+        for (int i = 0; i < scoreItems.Length; i++)
+        {
+            var comma = i < scoreItems.Length - 1 ? "," : "";
+            Console.WriteLine($"  '{scoreItems[i].Key}': {scoreItems[i].Value}{comma}");
+        }
+        Console.WriteLine("}");
         Console.WriteLine("-----");
     }
 }
@@ -194,6 +202,10 @@ public class Mythos
 {
     public static void Run()
     {
+        Console.WriteLine("🏟️  Welcome to the Gridlock Arena of Mythos! 🏟️");
+        Console.WriteLine("Preparing for an epic battle between legendary creatures...");
+        Console.WriteLine();
+        
         var creatures = new List<Creature>
         {
             new Creature("Dragon", new Position(0, 0), new[] {Direction.Right, Direction.Down, Direction.Right}, 7, "🐉"),
@@ -215,9 +227,16 @@ public class Mythos
             kvp => kvp.Value
         );
         
-        Console.Write("{ ");
-        var scoreItems = finalScoresWithIcons.Select(kvp => $"{kvp.Key}: {kvp.Value}").ToArray();
-        Console.Write(string.Join(", ", scoreItems));
-        Console.WriteLine(" }");
+        Console.WriteLine("🏆 FINAL BATTLE RESULTS 🏆");
+        Console.WriteLine("{");
+        var scoreItems = finalScoresWithIcons.ToArray();
+        for (int i = 0; i < scoreItems.Length; i++)
+        {
+            var comma = i < scoreItems.Length - 1 ? "," : "";
+            Console.WriteLine($"  '{scoreItems[i].Key}': {scoreItems[i].Value}{comma}");
+        }
+        Console.WriteLine("}");
+        Console.WriteLine();
+        Console.WriteLine("The battle has concluded! May the strongest creature be victorious!");
     }
 }
