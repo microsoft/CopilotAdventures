@@ -6,8 +6,6 @@
  * This script demonstrates the complete battle simulation system
  * with various scenarios and comprehensive testing.
  * 
- * @author Claude Code
- * @version 2.0
  */
 
 import { runBattleSimulation, creatures } from './The-Gridlock-Arena-of-Mythos.js';

@@ -6,7 +6,7 @@ public class Program
         var adventure = args?.FirstOrDefault()?.ToLower();
         if (string.IsNullOrWhiteSpace(adventure))
         {
-            Console.WriteLine("Please specify which logic to run: Sample names include: algora, chamberofechoes, elodoria, lumoria, mythos, stonevale, tempora.");
+            Console.WriteLine("Please specify which logic to run: Sample names include: algora, chamberofechoes, elodoria, lumoria, mythos, mythos-test, stonevale, tempora.");
             adventure = Console.ReadLine();
         }
 
@@ -26,6 +26,9 @@ public class Program
                 break;
             case "mythos":
                 Mythos.Run();
+                break;
+            case "mythos-test":
+                GridlockTestRunner.Run();
                 break;
             case "stonevale":
                 StoneVale.Run();
