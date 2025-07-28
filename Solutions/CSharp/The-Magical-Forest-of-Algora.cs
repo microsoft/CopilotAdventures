@@ -19,8 +19,13 @@ public class Algora
         Dictionary<string, string> effects = new Dictionary<string, string>()
         {
             { "TwirlTwirl", "Fireflies light up the forest." },
+            { "LeapLeap", "The forest grows taller." },
+            { "SpinSpin", "The forest shrinks." },
+            { "TwirlLeap", "The forest becomes more dense." },
             { "LeapSpin", "Gentle rain starts falling." },
-            { "SpinLeap", "A rainbow appears in the sky." }
+            { "SpinLeap", "A rainbow appears in the sky." },
+            { "TwirlSpin", "The forest becomes less dense." },
+            { "LeapTwirl", "The forest becomes more vibrant." }
         };
 
         Console.WriteLine(string.Join(Environment.NewLine, simulateDance(loxMoves, drakoMoves, effects)));

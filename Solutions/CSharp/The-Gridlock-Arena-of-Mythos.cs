@@ -58,6 +58,7 @@ class BattleSimulator
     {
         var grid = new string?[GridSize, GridSize];
         var scores = _creatures.ToDictionary(creature => creature.Name, creature => 0);
+        var activeCreatures = new List<Creature>(_creatures); // Track active creatures
 
         foreach (var creature in _creatures)
         {
@@ -67,10 +68,20 @@ class BattleSimulator
         var maxMoves = _creatures.Max(creature => creature.Moves.Length);
         for (int move = InitialMove; move < maxMoves; move++)
         {
-            RenderGrid(move, grid, scores);
+            RenderGrid(move, grid, scores, _creatures);
             if (move == maxMoves - 1) break;
 
-            foreach (var creature in _creatures)
+            // Clear the grid for this move
+            for (int i = 0; i < GridSize; i++)
+            {
+                for (int j = 0; j < GridSize; j++)
+                {
+                    grid[i, j] = null;
+                }
+            }
+
+            // First, calculate all new positions for active creatures only
+            var newPositions = activeCreatures.Select(creature =>
             {
                 var position = creature.Start;
                 if (move < creature.Moves.Length && move >= 0)
@@ -78,27 +89,78 @@ class BattleSimulator
                     var (dx, dy) = Directions[creature.Moves[move]];
                     position = position.MoveBy(dx, dy, GridSize);
                 }
+                return new { Creature = creature, NewPosition = position };
+            }).ToList();
 
-                var overlappingCreature = _creatures.FirstOrDefault(c => c.Start == position && c.Name != creature.Name);
-                if (overlappingCreature != null)
+            // Track creatures that will be defeated this round
+            var defeated = new HashSet<string>();
+
+            // Group creatures by position to handle multi-creature collisions
+            var positionGroups = newPositions.GroupBy(item => item.NewPosition).ToList();
+
+            // Process collisions for each position
+            foreach (var group in positionGroups)
+            {
+                var creaturesAtPosition = group.ToList();
+                if (creaturesAtPosition.Count > 1)
                 {
-                    scores[overlappingCreature.Name] -= creature.Power;
-                    scores[creature.Name] += creature.Power;
-                    grid[position.X, position.Y] = OverlapIcon;
-                }
-                else
-                {
-                    grid[creature.Start.X, creature.Start.Y] = null;
-                    creature.Start = position;
-                    grid[position.X, position.Y] = creature.Icon;
+                    // Multiple creatures at same position - battle!
+                    var position = creaturesAtPosition[0].NewPosition;
+                    grid[position.X, position.Y] = OverlapIcon; // Show battle
+                    
+                    // Find the strongest creature(s)
+                    var maxPower = creaturesAtPosition.Max(item => item.Creature.Power);
+                    var winners = creaturesAtPosition.Where(item => item.Creature.Power == maxPower).ToList();
+                    var losers = creaturesAtPosition.Where(item => item.Creature.Power < maxPower).ToList();
+                    
+                    if (winners.Count == 1)
+                    {
+                        // Single winner - gets points for all defeated creatures
+                        var winner = winners[0].Creature;
+                        foreach (var loser in losers)
+                        {
+                            scores[winner.Name] += loser.Creature.Power;
+                            defeated.Add(loser.Creature.Name);
+                        }
+                    }
+                    else
+                    {
+                        // Multiple creatures with same max power - all defeated
+                        foreach (var item in creaturesAtPosition)
+                        {
+                            defeated.Add(item.Creature.Name);
+                        }
+                    }
                 }
             }
+
+            // Update positions for surviving creatures and remove defeated ones
+            activeCreatures = activeCreatures.Where(creature =>
+            {
+                if (defeated.Contains(creature.Name))
+                {
+                    return false; // Remove defeated creature
+                }
+                
+                // Update position for surviving creature
+                var newPosItem = newPositions.FirstOrDefault(np => np.Creature.Name == creature.Name);
+                if (newPosItem != null)
+                {
+                    creature.Start = newPosItem.NewPosition;
+                    var position = creature.Start;
+                    if (grid[position.X, position.Y] != OverlapIcon) // Don't overwrite battle indicators
+                    {
+                        grid[position.X, position.Y] = creature.Icon;
+                    }
+                }
+                return true;
+            }).ToList();
         }
 
         return scores;
     }
 
-    private static void RenderGrid(int move, string?[,] grid, Dictionary<string, int> scores)
+    private static void RenderGrid(int move, string?[,] grid, Dictionary<string, int> scores, List<Creature> creatures)
     {
         var moveText = move == InitialMove ? "Initial Board" : $"Move {move + 1}";
         Console.WriteLine(moveText);
@@ -110,11 +172,20 @@ class BattleSimulator
             }
             Console.WriteLine();
         }
-        Console.WriteLine("Scores:");
-        foreach (var score in scores)
-        {
-            Console.WriteLine($"{score.Key}: {score.Value}");
-        }
+        
+        // Create scores with icons
+        var scoresWithIcons = scores.ToDictionary(
+            kvp => {
+                var creature = creatures.FirstOrDefault(c => c.Name == kvp.Key);
+                return creature != null ? $"{creature.Icon} {kvp.Key}" : kvp.Key;
+            },
+            kvp => kvp.Value
+        );
+        
+        Console.Write("Scores: { ");
+        var scoreItems = scoresWithIcons.Select(kvp => $"{kvp.Key}: {kvp.Value}").ToArray();
+        Console.Write(string.Join(", ", scoreItems));
+        Console.WriteLine(" }");
         Console.WriteLine("-----");
     }
 }
@@ -125,16 +196,28 @@ public class Mythos
     {
         var creatures = new List<Creature>
         {
-            new Creature("Dragon", new Position(2, 2), new[] {Direction.Right, Direction.Left, Direction.Down}, 7, "🐉"),
-            new Creature("Goblin", new Position(2, 3), new[] {Direction.Left, Direction.Right, Direction.Up}, 3, "👺"),
-            new Creature("Ogre", new Position(0, 0), new[] {Direction.Right, Direction.Down, Direction.Down}, 5, "👹")
+            new Creature("Dragon", new Position(0, 0), new[] {Direction.Right, Direction.Down, Direction.Right}, 7, "🐉"),
+            new Creature("Goblin", new Position(0, 2), new[] {Direction.Left, Direction.Down, Direction.Left}, 3, "👺"),
+            new Creature("Ogre", new Position(2, 0), new[] {Direction.Up, Direction.Right, Direction.Down}, 5, "👹"),
+            new Creature("Troll", new Position(2, 2), new[] {Direction.Up, Direction.Left, Direction.Up}, 4, "👿"),
+            new Creature("Wizard", new Position(4, 1), new[] {Direction.Up, Direction.Up, Direction.Left}, 6, "🧙")
         };
 
         var simulator = new BattleSimulator(creatures);
         var scores = simulator.Battle();
-        foreach (var score in scores)
-        {
-            Console.WriteLine($"{score.Key}: {score.Value}");
-        }
+        
+        // Create final scores with icons
+        var finalScoresWithIcons = scores.ToDictionary(
+            kvp => {
+                var creature = creatures.FirstOrDefault(c => c.Name == kvp.Key);
+                return creature != null ? $"{creature.Icon} {kvp.Key}" : kvp.Key;
+            },
+            kvp => kvp.Value
+        );
+        
+        Console.Write("{ ");
+        var scoreItems = finalScoresWithIcons.Select(kvp => $"{kvp.Key}: {kvp.Value}").ToArray();
+        Console.Write(string.Join(", ", scoreItems));
+        Console.WriteLine(" }");
     }
 }

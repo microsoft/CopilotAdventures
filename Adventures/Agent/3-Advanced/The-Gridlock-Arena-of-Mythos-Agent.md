@@ -49,21 +49,23 @@ Now let's define the requirements for the arena battle simulation so that you ca
 2. **Creature Data:**
    | Name   | Start Position | Moves                | Power | Icon |
    |--------|---------------|----------------------|-------|------|
-   | Dragon | 2,2           | RIGHT, LEFT, DOWN    | 7     | 🐉   |
-   | Goblin | 2,3           | LEFT, RIGHT, UP      | 3     | 👺   |
-   | Ogre   | 0,0           | RIGHT, DOWN, DOWN    | 5     | 👹   |
+   | Dragon | 0,0           | RIGHT, DOWN, RIGHT   | 7     | 🐉   |
+   | Goblin | 0,2           | LEFT, DOWN, LEFT     | 3     | 👺   |
+   | Ogre   | 2,0           | UP, RIGHT, DOWN      | 5     | 👹   |
+   | Troll  | 2,2           | UP, LEFT, UP         | 4     | 👿   |
+   | Wizard | 4,1           | UP, UP, LEFT         | 6     | 🧙   |
 
 3. **Battle Mechanics:**
-   - Turn-based movement (creatures move one at a time)
-   - When creatures land on the same cell, they battle
-   - Damage inflicted = creature's power value
-   - Points gained = damage inflicted
-   - Points lost = damage received
-   - Each pair can only battle once per round
+   - All creatures move simultaneously each round
+   - When multiple creatures land on the same cell, they battle
+   - The creature with highest power wins and earns points equal to all defeated creatures' power
+   - Defeated creatures are eliminated from the arena
+   - If creatures have equal power, all are eliminated
+   - Multiple separate battles can occur in the same round
 
 4. **Grid Visualization:**
    - ⬜️ for empty cells
-   - Creature icons (🐉, 👺, 👹) for positions
+   - Creature icons (🐉, 👺, 👹, 👿, 🧙) for positions
    - 🤺 for battle locations
 
 ### Using Agent Mode to Solve the Adventure
@@ -75,22 +77,123 @@ In the Chat panel with "Agent" mode selected, provide a comprehensive prompt lik
 ```
 Create a complete Gridlock Arena battle simulation system for the mystical land of Mythos. The system should:
 
-1. Create a console application in JavaScript (or your preferred language)
-2. Implement a 5x5 grid arena with visual representation
-3. Define three creatures with specific properties:
-   - Dragon: starts at (2,2), moves [RIGHT, LEFT, DOWN], power 7, icon 🐉
-   - Goblin: starts at (2,3), moves [LEFT, RIGHT, UP], power 3, icon 👺
-   - Ogre: starts at (0,0), moves [RIGHT, DOWN, DOWN], power 5, icon 👹
-4. Implement turn-based movement and battle mechanics
-5. Handle collision detection and battle resolution
-6. Track scores (points gained from damage inflicted minus damage received)
-7. Visualize the grid state after each round with proper Unicode characters
-8. Display current scores and determine the winner
-9. Include comprehensive error handling and documentation
-10. Create unit tests to ensure 100% test coverage
-11. Make the code efficient and maintainable
+1. **Project Setup**:
+   - Create a console application in your preferred language
+   - Single file implementation for simplicity (e.g., `The-Gridlock-Arena-of-Mythos.js`)
+   - Use modern module/import system for your chosen language
+   - Follow current best practices for project structure and dependencies
 
-Please create the project structure, write the code, test it thoroughly, and demonstrate the battle simulation.
+2. **Grid Arena Implementation**:
+   - 5x5 grid arena using a 2D array
+   - Grid coordinates: [row, column] where [0,0] is top-left
+   - Visual representation using Unicode characters:
+     - ⬜️ for empty cells
+     - Creature icons for occupied positions
+     - 🤺 for battle locations where creatures fought
+
+3. **Creature Data Structure** (exactly as specified):
+   Each creature must have these properties:
+   - **name**: String identifier for the creature
+   - **start**: Starting position as [row, column] coordinates
+   - **moves**: Array of movement directions in sequence
+   - **power**: Integer representing battle strength
+   - **icon**: Unicode emoji for visual representation
+
+   **Required Creatures** (in this exact order):
+   | Name   | Start Position | Move Sequence           | Power | Icon |
+   |--------|---------------|-------------------------|-------|------|
+   | Dragon | [0, 0]        | ["RIGHT", "DOWN", "RIGHT"] | 7     | 🐉   |
+   | Goblin | [0, 2]        | ["LEFT", "DOWN", "LEFT"]   | 3     | 👺   |
+   | Ogre   | [2, 0]        | ["UP", "RIGHT", "DOWN"]    | 5     | 👹   |
+   | Troll  | [2, 2]        | ["UP", "LEFT", "UP"]       | 4     | 👿   |
+   | Wizard | [4, 1]        | ["UP", "UP", "LEFT"]       | 6     | 🧙   |
+
+4. **Movement System** (CRITICAL - Follow This Exact Sequence):
+   - Direction mapping: UP=[-1,0], DOWN=[1,0], LEFT=[0,-1], RIGHT=[0,1]
+   - All creatures move simultaneously each round using their NEXT move in sequence
+   - Move indexing: Move 1 uses index 0, Move 2 uses index 1, Move 3 uses index 2
+   - Boundary checking: creatures cannot move outside the 5x5 grid (clamp to boundaries)
+   - After 3 moves, all creatures complete their movement sequences
+
+5. **Battle Mechanics** (critical implementation details):
+   - When multiple creatures move to the same cell, they battle
+   - Battle resolution: creature with highest power wins
+   - Winner earns points equal to the sum of ALL defeated creatures' power values
+   - ALL defeated creatures are immediately eliminated from the arena
+   - If multiple creatures have the same highest power, ALL battling creatures are eliminated
+   - Multiple separate battles can occur in the same round at different locations
+
+6. **Scoring System**:
+   - Initialize all creatures with 0 points
+   - Winners gain points equal to defeated creatures' power
+   - Defeated creatures remain at 0 points
+   - Score format includes creature icons: "🐉 Dragon: 12"
+
+7. **Game Flow**:
+   - Display "Initial Board" first (shows starting positions)
+   - Then "Move 1", "Move 2", "Move 3" for each subsequent round
+   - Game ends when all moves are completed or no creatures remain
+   - Track active creatures (remove defeated ones from processing)
+
+8. **Required Output Format** (Match This Exactly):
+   ```
+   Initial Board
+   🐉 ⬜️ 👺 ⬜️ ⬜️
+   ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+   👹 ⬜️ 👿 ⬜️ ⬜️
+   ⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+   ⬜️ 🧙 ⬜️ ⬜️ ⬜️
+   Scores: {
+     '🐉 Dragon': 0,
+     '👺 Goblin': 0,
+     '👹 Ogre': 0,
+     '👿 Troll': 0,
+     '🧙 Wizard': 0
+   }
+   -----
+   ```
+
+9. **Movement Verification** (CRITICAL - Use This to Debug):
+   Verify your movement logic produces these positions:
+   
+   **Move 1**: Dragon: [0,1], Goblin: [0,1], Ogre: [1,0], Troll: [1,2], Wizard: [3,1]
+   - Battle at [0,1]: Dragon (7) defeats Goblin (3) → Dragon gains 3 points
+   
+   **Move 2**: Dragon: [1,1], Ogre: [1,1], Troll: [1,1], Wizard: [2,1]  
+   - Battle at [1,1]: Dragon (7) defeats Ogre (5) and Troll (4) → Dragon gains 9 points (total: 12)
+   
+   **Move 3**: Dragon: [1,2], Wizard: [2,0]
+   - No battles, both creatures survive
+
+10. **Expected Final Results**:
+    - Dragon: 12 points (defeats Goblin for 3 points in Move 1, then defeats Ogre and Troll for 9 points in Move 2)
+    - Wizard: 0 points (survives all battles)
+    - All other creatures: 0 points (defeated)
+    - Final output: { '🐉 Dragon': 12, '👺 Goblin': 0, '👹 Ogre': 0, '👿 Troll': 0, '🧙 Wizard': 0 }
+
+11. **Technical Implementation Requirements**:
+    - Use proper separation between calculation phase (determine new positions) and application phase (resolve battles, update positions)
+    - Clear the grid each round and rebuild it with current creature positions
+    - Group creatures by destination position to detect collisions
+    - Handle multi-creature battles correctly (not just 2-creature battles)
+    - Use modern language features and follow current coding standards
+
+12. **Code Quality**:
+    - Include comprehensive error handling and documentation
+    - Create unit tests to ensure 100% test coverage
+    - Make the code efficient and maintainable
+    - Use clear, descriptive function and variable names
+    - Structure code with proper module exports/imports for testability
+    - Include build/run scripts appropriate for your chosen language
+    - Follow modern coding standards and best practices for your language
+
+**Language-Specific Modern Practices** (choose what applies):
+- **JavaScript/Node.js**: Use ES modules (import/export), create package.json with "type": "module"
+- **Python**: Use modern imports, type hints, and virtual environments
+- **C#**: Use modern C# features, proper namespaces, and .csproj structure
+- **Other languages**: Apply equivalent modern standards and tooling
+
+IMPORTANT: If your output doesn't match the expected battle results in section 9, debug your movement logic. The battle timing is critical for the educational value of this adventure.
 ```
 
 #### Step 2: Watch Agent Mode Work
@@ -133,69 +236,72 @@ Enhance the Gridlock Arena system with these advanced features:
 When your Agent Mode implementation is complete, running the application should produce output similar to the following. AI is non-deterministic, so your results may vary slightly, but the structure should be similar.
 
 ```
-⚔️ Welcome to the Gridlock Arena of Mythos! ⚔️
+Initial Board
+🐉 ⬜️ 👺 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+👹 ⬜️ 👿 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ 🧙 ⬜️ ⬜️ ⬜️
+Scores: {
+  '🐉 Dragon': 0,
+  '👺 Goblin': 0,
+  '👹 Ogre': 0,
+  '👿 Troll': 0,
+  '🧙 Wizard': 0
+}
+-----
+Move 1
+⬜️ 🤺 ⬜️ ⬜️ ⬜️
+👹 ⬜️ ⬜️ 👿 ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ 🧙 ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+Scores: {
+  '🐉 Dragon': 3,
+  '👺 Goblin': 0,
+  '👹 Ogre': 0,
+  '👿 Troll': 0,
+  '🧙 Wizard': 0
+}
+-----
+Move 2
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ 🤺 ⬜️ ⬜️ ⬜️
+⬜️ 🧙 ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+Scores: {
+  '🐉 Dragon': 12,
+  '👺 Goblin': 0,
+  '👹 Ogre': 0,
+  '👿 Troll': 0,
+  '🧙 Wizard': 0
+}
+-----
+Move 3
+⬜️ ⬜️ 🐉 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+🧙 ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+Scores: {
+  '🐉 Dragon': 12,
+  '👺 Goblin': 0,
+  '👹 Ogre': 0,
+  '👿 Troll': 0,
+  '🧙 Wizard': 0
+}
+-----
+🏆 FINAL BATTLE RESULTS 🏆
+{
+  '🐉 Dragon': 12,
+  '👺 Goblin': 0,
+  '👹 Ogre': 0,
+  '👿 Troll': 0,
+  '🧙 Wizard': 0
+}
 
-🏟️ Initial Board:
-👹⬜️⬜️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️
-⬜️⬜️🐉👺⬜️
-⬜️⬜️⬜️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️
-
-=== Round 1 ===
-🐉 Dragon moves RIGHT to (2,3)
-🤺 Dragon battles Goblin at (2,3)!
-   - Dragon deals 7 damage to Goblin
-   - Goblin deals 3 damage to Dragon
-
-👺 Goblin moves LEFT to (2,2)
-👹 Ogre moves RIGHT to (0,1)
-
-Round 1 Board:
-⬜️👹⬜️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️
-⬜️⬜️👺🐉⬜️
-⬜️⬜️⬜️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️
-
-Current Scores: Dragon: 4 | Goblin: -4 | Ogre: 0
-
-=== Round 2 ===
-🐉 Dragon moves LEFT to (2,2)
-🤺 Dragon battles Goblin at (2,2)!
-   - Dragon deals 7 damage to Goblin
-   - Goblin deals 3 damage to Dragon
-
-👺 Goblin moves RIGHT to (2,3)
-👹 Ogre moves DOWN to (1,1)
-
-Round 2 Board:
-⬜️⬜️⬜️⬜️⬜️
-⬜️👹⬜️⬜️⬜️
-⬜️⬜️🐉👺⬜️
-⬜️⬜️⬜️⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️
-
-Current Scores: Dragon: 8 | Goblin: -8 | Ogre: 0
-
-=== Round 3 ===
-🐉 Dragon moves DOWN to (3,2)
-👺 Goblin moves UP to (1,3)
-👹 Ogre moves DOWN to (2,1)
-
-Final Board:
-⬜️⬜️⬜️⬜️⬜️
-⬜️👹⬜️👺⬜️
-⬜️👹⬜️⬜️⬜️
-⬜️⬜️🐉⬜️⬜️
-⬜️⬜️⬜️⬜️⬜️
-
-🏆 FINAL RESULTS 🏆
-👑 Dragon: 8 points (WINNER!)
-👺 Goblin: -8 points
-👹 Ogre: 0 points
-
-🎉 The Dragon emerges victorious in the Gridlock Arena! 🎉
+The battle has concluded! May the strongest creature be victorious!
 ```
 
 ### Agent Mode Tips

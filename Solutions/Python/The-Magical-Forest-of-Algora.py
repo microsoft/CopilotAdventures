@@ -3,8 +3,13 @@ drako_moves = ["Spin", "Twirl", "Leap", "Leap", "Spin"]
 
 effects = {
     "TwirlTwirl": "Fireflies light up the forest.",
+    "LeapLeap": "The forest grows taller.",
+    "SpinSpin": "The forest shrinks.",
+    "TwirlLeap": "The forest becomes more dense.",
     "LeapSpin": "Gentle rain starts falling.",
-    "SpinLeap": "A rainbow appears in the sky."
+    "SpinLeap": "A rainbow appears in the sky.",
+    "TwirlSpin": "The forest becomes less dense.",
+    "LeapTwirl": "The forest becomes more vibrant."
 }
 
 def dance_effect(lox_move, drako_move):

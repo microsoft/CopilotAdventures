@@ -1,0 +1,15 @@
+{
+  "name": "gridlock-arena-of-mythos",
+  "version": "1.0.0",
+  "description": "Epic battle simulation system for the mystical land of Mythos",
+  "type": "module",
+  "main": "The-Gridlock-Arena-of-Mythos.js",
+  "scripts": {
+    "start": "node The-Gridlock-Arena-of-Mythos.js",
+    "test": "node The-Gridlock-Arena-of-Mythos.test.js",
+    "demo": "node demo-gridlock-arena.js"
+  },
+  "keywords": ["adventure", "simulation", "game", "copilot"],
+  "author": "CopilotAdventures",
+  "license": "MIT"
+}
