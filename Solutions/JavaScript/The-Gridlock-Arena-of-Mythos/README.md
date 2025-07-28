@@ -29,9 +29,13 @@ npm start
 # Run the comprehensive test suite
 npm test
 
+# Run the complete demo with multiple scenarios
+npm run demo
+
 # Or run files directly
 node The-Gridlock-Arena-of-Mythos.js
 node The-Gridlock-Arena-of-Mythos.test.js
+node demo-gridlock-arena.js
 ```
 
 ## Expected Results
