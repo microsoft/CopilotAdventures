@@ -50,10 +50,11 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
     - Use each creature's icon to represent it on the grid. 
     - Battle cells can be represented by a 🤺.
     - Display the current scores for each creature right below the grid after each round.
+    - Score format should include creature icons: `'🐉 Dragon': 12`
     - At the end of the game, return the total points each creature accumulated.
 
 6. **Expected Final Scores:**
-    - Dragon: 12 points (defeats Goblin in Move 2 for 3 points, then defeats Ogre and Troll in Move 3 for 5+4=9 points)
+    - Dragon: 12 points (defeats Goblin in Move 1 for 3 points, then defeats Ogre and Troll in Move 2 for 5+4=9 points)
     - Wizard: 0 points (survives but wins no battles)
     - All other creatures: 0 points (eliminated during battles)
 
@@ -62,11 +63,18 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
          <img src="../../../Images/mythos-board-example.png">
       </a>
 
-### Constraints
+### Constraints and Best Practices
 
 - Use GitHub Copilot and write the simulation in any language you'd like.
 - Ensure efficient algorithms to handle the battle dynamics. Ask GitHub Copilot, "How can I make this code more readable and maintainable?".
-- The program should have 100% test coverge. Use the /tests command in GitHub Copilot.
+- Follow modern development practices for your chosen language:
+  - **JavaScript**: Use ES modules (import/export), create package.json with "type": "module"
+  - **Python**: Use modern Python with proper function definitions and data structures
+  - **C#**: Use modern C# features, records, enums, and proper class structure
+  - **Other languages**: Apply equivalent modern standards and tooling
+- Structure code with proper module exports/imports for maintainability
+- Use clear, descriptive function and variable names
+- Include comprehensive error handling and documentation
 
 ### Summary of High-Level Tasks to Perform
 
@@ -86,13 +94,15 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
    - Render the initial board state.
 
 1. **Simulate Battle Rounds**:
-   - Loop through each move (starting from -1 for initial display).
+   - **Critical Algorithm Flow**: Display initial board → For each move: calculate new positions → resolve battles → update grid → display results
+   - Display the "Initial Board" first, then loop through each move (0, 1, 2).
    - For each round:
      - Clear the grid for new positions.
      - Calculate new positions for all active creatures simultaneously.
      - Group creatures by their new positions to detect collisions.
      - Resolve battles: determine winners, award points, eliminate defeated creatures.
      - Update the grid with surviving creatures and battle indicators.
+     - Display the grid and scores for this move.
      - Remove defeated creatures from the active list.
 
 1. **Battle Resolution Logic**:
@@ -108,7 +118,26 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
 
 1. **Game Completion**:
    - Continue until all moves are executed or no active creatures remain.
-   - Return final scores with Dragon having 12 points and Wizard having 0 points. 
+   - Return final scores with Dragon having 12 points and Wizard having 0 points.
+
+### Technical Implementation Requirements
+
+1. **Movement Logic**:
+   - Direction mapping: UP=[-1,0], DOWN=[1,0], LEFT=[0,-1], RIGHT=[0,1]
+   - All creatures move simultaneously each round using their NEXT move in sequence
+   - Move indexing: Move 1 uses index 0, Move 2 uses index 1, Move 3 uses index 2
+   - Boundary checking: creatures cannot move outside the 5x5 grid (clamp to boundaries)
+
+2. **Battle Resolution**:
+   - Use proper separation between calculation phase (determine new positions) and application phase (resolve battles, update positions)
+   - Clear the grid each round and rebuild it with current creature positions
+   - Group creatures by destination position to detect collisions
+   - Handle multi-creature battles correctly (not just 2-creature battles)
+
+3. **Code Organization**:
+   - Structure functions for reusability and maintainability
+   - Use modern language features and follow current coding standards
+   - Include comprehensive error handling and input validation 
 
 ### Tips to Get Started
 
@@ -117,10 +146,57 @@ Your task is to simulate a battle in the Gridlock Arena. Each creature will make
     - [Node.js](https://nodejs.org)
     - [Python](https://www.python.org/downloads/)
     - [.NET](https://dot.net)
-1. Create a folder for your code. 
-    - JavaScript: Create a folder called `mythos` and add a file named `app.js`.
-    - Python: Create a folder called `mythos` and add a file named `app.py`.
-    - C#: Create a folder called `mythos` and run `dotnet new console`.
+1. Create a folder for your code and set up modern project structure:
+    - **JavaScript**: Create a folder called `mythos`, add `app.js`, and create `package.json` with `"type": "module"` for ES6 support
+    - **Python**: Create a folder called `mythos`, add `app.py`, and structure with proper function definitions for modularity
+    - **C#**: Create a folder called `mythos`, run `dotnet new console`, and use modern C# features like records and enums
+
+### Expected Output Example
+
+Your implementation should produce output similar to this:
+
+```
+Initial Board
+🐉 ⬜️ 👺 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+👹 ⬜️ 👿 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ 🧙 ⬜️ ⬜️ ⬜️
+Scores: { '🐉 Dragon': 0, '👺 Goblin': 0, '👹 Ogre': 0, '👿 Troll': 0, '🧙 Wizard': 0 }
+-----
+Move 1
+⬜️ 🤺 ⬜️ ⬜️ ⬜️
+👹 ⬜️ 👿 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ 🧙 ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+Scores: { '🐉 Dragon': 3, '👺 Goblin': 0, '👹 Ogre': 0, '👿 Troll': 0, '🧙 Wizard': 0 }
+-----
+Move 2
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ 🤺 ⬜️ ⬜️ ⬜️
+⬜️ 🧙 ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+Scores: { '🐉 Dragon': 12, '👺 Goblin': 0, '👹 Ogre': 0, '👿 Troll': 0, '🧙 Wizard': 0 }
+-----
+Move 3
+⬜️ ⬜️ 🐉 ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+🧙 ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+⬜️ ⬜️ ⬜️ ⬜️ ⬜️
+Scores: { '🐉 Dragon': 12, '👺 Goblin': 0, '👹 Ogre': 0, '👿 Troll': 0, '🧙 Wizard': 0 }
+```
+
+### Debugging Your Implementation
+
+If your output doesn't match the expected results, check these common issues:
+
+1. **Movement Timing**: Ensure you display "Initial Board" first, then process moves in correct sequence
+2. **Battle Logic**: Dragon should battle Goblin in Move 1, then battle Ogre+Troll in Move 2
+3. **Score Format**: Include creature emojis in score display
+4. **Boundary Handling**: Creatures should stay within grid bounds when moving to invalid positions
 
 ### GitHub Copilot Tips
 
