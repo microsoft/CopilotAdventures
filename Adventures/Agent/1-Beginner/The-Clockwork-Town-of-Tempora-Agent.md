@@ -19,7 +19,7 @@ Your task is to create a system that checks all the clocks in the town and synch
 Before starting this adventure, you'll need to perform the following steps:
 
 1. **Install VS Code** - Download from [VS Code](https://code.visualstudio.com/).
-2. **Set up Copilot in VS Code** - Follow the instructions at [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup).
+2. **Set up GitHub Copilot in VS Code** - Follow the instructions at [Set up GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/setup).
 
 ### Learning Outcomes
 
