@@ -12,7 +12,7 @@ Recently, the Command Center's main AI system has been upgraded to support custo
 
 ### Objective
 
-Your mission is to learn how to install and utilize GitHub Copilot's Custom Chat Modes by setting up a specialized "Implementation Planner" AI commander for your development missions. You'll explore how custom chat modes available in the [Awesome Copilot repository](https://github.com/github/awesome-copilot) can transform your coding experience by providing specialized AI assistants tailored to your specific development needs.
+Your mission is to learn how to install and utilize GitHub Copilot's Custom Chat Modes by setting up a specialized "Implementation Planner" AI commander for your development missions. You'll explore how custom chat modes available in the [Awesome GitHub Copilot repository](https://github.com/github/awesome-copilot) can transform your coding experience by providing specialized AI assistants tailored to your specific development needs.
 
 **In this adventure, you'll learn to use GitHub Copilot's Custom Chat Modes** - specialized AI configurations that provide enhanced, context-aware assistance for particular tasks or workflows!
 
@@ -59,18 +59,29 @@ Your mission briefing includes the following objectives to understand custom cha
 
 #### Step 1: Access the Stellaris Command Database
 
-Navigate to the [Awesome Copilot Custom Chat Modes repository](https://github.com/github/awesome-copilot/blob/main/prompts/create-implementation-plan.prompt.md) to access the specialized "Implementation Plan Creator" command protocol.
+Navigate to the [Awesome Copilot Custom Chat Modes repository](https://github.com/github/awesome-copilot/blob/main/chatmodes/implementation-plan.chatmode.md) to view the specialized "Implementation Plan Generator" command protocol.
 
 This custom chat mode is designed to help you create detailed, structured implementation plans for any development project - perfect for planning complex space missions!
 
 #### Step 2: Deploy the Custom Commander
 
-1. **Click the "VS Code Install" button** next to the "Implementation Plan Creator" to automatically install the custom chat mode
-2. **VS Code will open** and prompt you to install chat mode file
-3. **Choose your installation location:**
-   - **Workspace**: Install for current project only
-   - **User Profile**: Install globally for all your projects
-4. **Confirm the installation** when prompted
+1. Install the [Implementation Plan Generation](https://vscode.dev/redirect?url=vscode%3Achat-chatmode%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fawesome-copilot%2Fmain%2Fchatmodes%2Fimplementation-plan.chatmode.md) custom chat mode.
+2. VS Code will open and prompt you to install the chat mode file.
+3. Choose your installation location:
+   - Workspace: Install for the current project only 
+   - User Profile: Install globally for all your projects
+4. Confirm the installation when prompted
+
+Can I install the custom chat mode manually? Yes!
+
+1. Copy the text from the [Implementation Plan Generation Mode](https://raw.githubusercontent.com/github/awesome-copilot/refs/heads/main/chatmodes/implementation-plan.chatmode.md) file into your clipboard.
+2. Select <kbd>Ctrl + Shift + P</kbd> (Windows/Linux) or <kbd>Cmd (⌘) + Shift + P</kbd> (Mac).
+3. Enter “New Mode File”.
+4. Select one of the following options: 
+   - `.github/chatmodes` - Stores the custom chat mode in the current project.
+   - User Data Folder – Makes the chat mode available across all projects.
+5. Give it a name of "implementation-plan-generation". 
+6. Paste the contents of your clipboard into the markdown file and save it.
 
 #### Step 3: Activate Your Specialized Commander
 
