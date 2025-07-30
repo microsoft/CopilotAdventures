@@ -55,6 +55,7 @@ GitHub Copilot offers three powerful interaction modes:
 
 - **[The Clockwork Town of Tempora](./Adventures/Agent/1-Beginner/The-Clockwork-Town-of-Tempora-Agent.md)** - In the mechanical town of Tempora, everything operates on clockwork and precise timing. At the heart of the town is the Grand Clock Tower, responsible for keeping time for all the town's activities. However, over the years, some smaller clocks in the town have started to drift away from the accurate time.
 - **[The Magical Forest of Algora](./Adventures/Agent/1-Beginner/The-Magical-Forest-of-Algora-Agent.md)** - Deep within the enchanted Forest of Algora, two mystical creatures, the Lox and the Faelis, perform a sacred dance every millennium. This dance is not just for celebration but is a ritual to bring balance to the forest.
+**[The Command Center of Stellaris (Custom Agent Chat Mode)](./Adventures/Agent/1-Beginner/The-Command-Center-of-Stellaris-Agent.md)** - In the galaxy of Stellaris, the Galactic Command Center coordinates missions across star systems using expert AI commanders. A recent upgrade enables custom command protocols, letting commanders activate mission-specific modes with advanced tools and guidance for any challenge.
 
 #### Intermediate Adventures
 
@@ -65,7 +66,7 @@ GitHub Copilot offers three powerful interaction modes:
 #### Advanced Adventures
 
 - **[The Gridlock Arena of Mythos](./Adventures/Agent/3-Advanced/The-Gridlock-Arena-of-Mythos-Agent.md)** - In the mystical land of Mythos, creatures from various realms come together to battle in the Gridlock Arena, a chess-like grid where strategy, power, and cunning are tested. Each creature has its unique move, power, and strategy.
-- **[The Knowledge Cartographer](./Adventures/Agent/3-Advanced/The-Knowledge-Cartographer-Agent-MCP.md)** - In the vast digital expanse of the Akashic Archives, ancient knowledge fragments are scattered across countless web domains. As a Knowledge Cartographer, you'll build a system that combines web scraping with intelligent knowledge organization using GitHub Copilot Agent Mode and MCP (Model Context Protocol) tools.
+- **[The Knowledge Cartographer (Agent + MCP)](./Adventures/Agent/3-Advanced/The-Knowledge-Cartographer-Agent-MCP.md)** - In the vast digital expanse of the Akashic Archives, ancient knowledge fragments are scattered across countless web domains. As a Knowledge Cartographer, you'll build a system that combines web scraping with intelligent knowledge organization using GitHub Copilot Agent Mode and MCP (Model Context Protocol) tools.
 
 ---
 
