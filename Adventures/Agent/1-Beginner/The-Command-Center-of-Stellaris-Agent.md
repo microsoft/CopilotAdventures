@@ -183,10 +183,10 @@ Browse through the available modes and choose one that matches a real work scena
 
 Congratulations, Commander! You've successfully:
 
-✅ **Installed your first custom chat mode**
-✅ **Experienced enhanced AI assistance for specialized tasks**  
-✅ **Learned to select appropriate modes for different scenarios**
-✅ **Explored the ecosystem of community-created modes**
+- ✅ **Installed your first custom chat mode**
+- ✅ **Experienced enhanced AI assistance for specialized tasks**  
+- ✅ **Learned to select appropriate modes for different scenarios**
+- ✅ **Explored the ecosystem of community-created modes**
 
 ### Advanced Mission Objectives
 
