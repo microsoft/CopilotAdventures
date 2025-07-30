@@ -1,4 +1,4 @@
-## The Command Center of Stellaris - Agent Mode Adventure
+## The Command Center of Stellaris - Custom Agent Chat Mode Adventure
 
 <a href="#">
     <img src="../../../Images/stellaris-command.jpg"  style="width: 830px" />
