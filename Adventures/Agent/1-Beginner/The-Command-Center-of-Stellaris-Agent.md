@@ -27,9 +27,11 @@ Before starting this adventure, you'll need to perform the following steps:
 
 By completing this adventure, you'll learn:
 
-- ✅ How to discover and install GitHub Copilot Custom Chat Modes from [Awesome Copilot](https://github.com/github/awesome-copilot)
-- ✅ How custom chat modes enhance AI assistance for specific tasks
-- ✅ Best practices for selecting the right chat mode for your needs
+✅ How to discover and install GitHub Copilot Custom Chat Modes from [Awesome Copilot](https://github.com/github/awesome-copilot)
+
+✅ How custom chat modes enhance AI assistance for specific tasks
+
+✅ Best practices for selecting the right chat mode for your needs
 
 ### Setting Up Your Mission
 
@@ -183,10 +185,13 @@ Browse through the available modes and choose one that matches a real work scena
 
 Congratulations, Commander! You've successfully:
 
-- ✅ **Installed your first custom chat mode**
-- ✅ **Experienced enhanced AI assistance for specialized tasks**  
-- ✅ **Learned to select appropriate modes for different scenarios**
-- ✅ **Explored the ecosystem of community-created modes**
+✅ **Installed your first custom chat mode**
+
+✅ **Experienced enhanced AI assistance for specialized tasks**  
+
+✅ **Learned to select appropriate modes for different scenarios**
+
+✅ **Explored the ecosystem of community-created modes**
 
 ### Advanced Mission Objectives
 
