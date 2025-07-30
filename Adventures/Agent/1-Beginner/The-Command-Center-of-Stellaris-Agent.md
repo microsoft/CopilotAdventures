@@ -12,7 +12,7 @@ Recently, the Command Center's main AI system has been upgraded to support custo
 
 ### Objective
 
-Your mission is to learn how to install and utilize GitHub Copilot's Custom Chat Modes by setting up a specialized "Implementation Planner Generator" AI commander for your development missions. You'll explore how custom chat modes available in the [Awesome GitHub Copilot repository](https://github.com/github/awesome-copilot) can transform your coding experience by providing specialized AI assistants tailored to your specific development needs.
+Your mission is to learn how to install and utilize GitHub Copilot's Custom Chat Modes by setting up a specialized "Implementation Planner Generator" AI commander for your development missions. You'll explore how custom chat modes available in the [Awesome GitHub Copilot repository](https://aka.ms/copilotadventures/awesomecopilot) can transform your coding experience by providing specialized AI assistants tailored to your specific development needs.
 
 **In this adventure, you'll learn to use GitHub Copilot's Custom Chat Modes** - specialized AI configurations that provide enhanced, context-aware assistance for particular tasks or workflows!
 
@@ -27,7 +27,7 @@ Before starting this adventure, you'll need to perform the following steps:
 
 By completing this adventure, you'll learn:
 
-✅ How to discover and install GitHub Copilot Custom Chat Modes from [Awesome Copilot](https://github.com/github/awesome-copilot)
+✅ How to discover and install GitHub Copilot Custom Chat Modes from [Awesome Copilot](https://aka.ms/copilotadventures/awesomecopilot)
 
 ✅ How custom chat modes enhance AI assistance for specific tasks
 
@@ -200,7 +200,7 @@ After mastering basic custom chat modes:
 1. **Create Your Own Mode**: Design a custom chat mode for your specific workflow needs
 2. **Team Deployment**: Share custom modes with your development team for consistency
 3. **Mode Chaining**: Use multiple specialized modes in sequence for complex projects
-4. **Community Contribution**: Share your custom modes with the GitHub community by submitting a PR to the [Awesome Copilot repository](https://github.com/github/awesome-copilot)
+4. **Community Contribution**: Share your custom modes with the GitHub community by submitting a PR to the [Awesome Copilot repository](https://aka.ms/copilotadventures/awesomecopilot)
 
 ### Return to Headquarters
 
