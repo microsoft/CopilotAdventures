@@ -12,7 +12,7 @@ Recently, the Command Center's main AI system has been upgraded to support custo
 
 ### Objective
 
-Your mission is to learn how to install and utilize GitHub Copilot's Custom Chat Modes by setting up a specialized "Implementation Planner" AI commander for your development missions. You'll explore how custom chat modes available in the [Awesome GitHub Copilot repository](https://github.com/github/awesome-copilot) can transform your coding experience by providing specialized AI assistants tailored to your specific development needs.
+Your mission is to learn how to install and utilize GitHub Copilot's Custom Chat Modes by setting up a specialized "Implementation Planner Generator" AI commander for your development missions. You'll explore how custom chat modes available in the [Awesome GitHub Copilot repository](https://github.com/github/awesome-copilot) can transform your coding experience by providing specialized AI assistants tailored to your specific development needs.
 
 **In this adventure, you'll learn to use GitHub Copilot's Custom Chat Modes** - specialized AI configurations that provide enhanced, context-aware assistance for particular tasks or workflows!
 
