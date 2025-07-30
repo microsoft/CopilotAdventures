@@ -61,7 +61,7 @@ Your mission briefing includes the following objectives to understand custom cha
 
 #### Step 1: Access the Stellaris Command Database
 
-Navigate to the [Awesome Copilot Custom Chat Modes repository](https://aka.ms/copilotadventures/awesomecopilot/blob/main/chatmodes/implementation-plan.chatmode.md) to view the specialized "Implementation Plan Generator" command protocol.
+Navigate to the [Awesome Copilot Custom Chat Modes repository](https://github.com/github/awesome-copilot/blob/main/chatmodes/implementation-plan.chatmode.md) to view the specialized "Implementation Plan Generator" command protocol.
 
 This custom chat mode is designed to help you create detailed, structured implementation plans for any development project - perfect for planning complex space missions!
 
@@ -136,7 +136,7 @@ Now that you've mastered your first custom commander, it's time to explore the f
 
 #### Step 1: Return to Command Headquarters
 
-Navigate back to the [Awesome Copilot repository](https://aka.ms/copilotadventures/awesomecopilot?tab=readme-ov-file#-custom-chat-modes) to explore the complete catalog of custom chat modes.
+Navigate back to the [Awesome Copilot repository](https://github.com/github/awesome-copilot?tab=readme-ov-file#-custom-chat-modes) to explore the complete catalog of custom chat modes.
 
 #### Step 2: Select Your Next Commander
 
