@@ -134,3 +134,8 @@ Do you have a copilot adventure story/puzzle you'd like to submit for others to 
 - Provide a solution using your chosen language. Place all of the code in a single file (to keep things simple), add it to the appropriate language folder in `Solutions`, and include it in the PR.
 
 We'll review your submission and merge it into the repo if it meets the criteria.
+
+## Additional Resources
+
+If you get stuck or have any questions about building AI apps, join our [Azure AI Foundry Community Discord](https://discord.com/invite/kzRShWzttr).
+If you have product feedback or errors while building visit our [Azure AI Foundry Developer Forum](https://github.com/orgs/azure-ai-foundry/discussions).
