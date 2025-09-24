@@ -1,5 +1,22 @@
 {
     "name": "CopilotAdventures",
+
+    "image": "mcr.microsoft.com/devcontainers/dotnet:8.0-noble",
+
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:latest": {},
+        "ghcr.io/devcontainers/features/dotnet:latest": {
+            "version": "9.0"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
+        "ghcr.io/devcontainers/features/node:latest": {},
+        "ghcr.io/devcontainers/features/python:latest": {}
+    },
+
+    "overrideFeatureInstallOrder": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+
     // Configure tool-specific properties.
     "customizations": {
         "vscode": {
