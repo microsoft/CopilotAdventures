@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Agentes - CopilotAdventures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .description {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+
+        .agent-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .agent-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .agent-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .agent-status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .status-active {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-busy {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-idle {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+
+        .agent-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-small {
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            width: auto;
+        }
+
+        .btn-small:hover {
+            background: #764ba2;
+        }
+
+        .btn-delete {
+            background: #dc3545;
+        }
+
+        .btn-delete:hover {
+            background: #c82333;
+        }
+
+        .tasks-section {
+            margin-top: 30px;
+        }
+
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .task-card {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            border-top: 4px solid #764ba2;
+        }
+
+        .task-card h4 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .task-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 20px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8em;
+            min-width: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .agent-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .agent-actions {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .btn-small {
+                flex: 1;
+            }
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 2em;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+        }
+
+        .empty-state p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ Organizador de Agentes</h1>
+            <p class="description">Coordina y gestiona múltiples agentes IA en tus aventuras</p>
+        </header>
+
+        <!-- Estadísticas -->
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="totalAgents">0</div>
+                <div class="stat-label">Agentes Totales</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="activeAgents">0</div>
+                <div class="stat-label">Activos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="totalTasks">0</div>
+                <div class="stat-label">Tareas</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="completedTasks">0</div>
+                <div class="stat-label">Completadas</div>
+            </div>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <!-- Panel de Creación de Agentes -->
+            <div class="card">
+                <h2>Nuevo Agente</h2>
+                <form id="agentForm">
+                    <div class="form-group">
+                        <label for="agentName">Nombre del Agente</label>
+                        <input type="text" id="agentName" placeholder="e.g., Guerrero Mágico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="agentRole">Rol</label>
+                        <select id="agentRole" required>
+                            <option value="">Selecciona un rol</option>
+                            <option value="warrior">Guerrero</option>
+                            <option value="mage">Mago</option>
+                            <option value="rogue">Pícaro</option>
+                            <option value="healer">Sanador</option>
+                            <option value="scout">Explorador</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="agentAbility">Habilidad Especial</label>
+                        <input type="text" id="agentAbility" placeholder="e.g., Lanzar hechizos">
+                    </div>
+                    <button type="submit">Crear Agente</button>
+                </form>
+
+                <h2 style="margin-top: 30px;">Crear Tarea</h2>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <label for="taskName">Nombre de la Tarea</label>
+                        <input type="text" id="taskName" placeholder="e.g., Derrotar al dragón" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskAgent">Asignar a Agente</label>
+                        <select id="taskAgent" required>
+                            <option value="">Selecciona un agente</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskPriority">Prioridad</label>
+                        <select id="taskPriority">
+                            <option value="low">Baja</option>
+                            <option value="medium" selected>Media</option>
+                            <option value="high">Alta</option>
+                            <option value="critical">Crítica</option>
+                        </select>
+                    </div>
+                    <button type="submit">Crear Tarea</button>
+                </form>
+            </div>
+
+            <!-- Panel de Menú y Agentes -->
+            <div class="card">
+                <h2>Agentes Disponibles</h2>
+                <div id="agentContainer" class="agent-list">
+                    <div class="empty-state">
+                        <p>📭 No hay agentes aún. ¡Crea tu primer agente!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Tareas -->
+        <div class="card tasks-section">
+            <h2>Tareas Asignadas</h2>
+            <div id="taskContainer" class="task-grid">
+                <div class="empty-state">
+                    <p>📋 No hay tareas. ¡Asigna una tarea a un agente!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Estado de la aplicación
+        const state = {
+            agents: [],
+            tasks: [],
+            nextAgentId: 1,
+            nextTaskId: 1
+        };
+
+        // Elementos del DOM
+        const agentForm = document.getElementById('agentForm');
+        const taskForm = document.getElementById('taskForm');
+        const agentContainer = document.getElementById('agentContainer');
+        const taskContainer = document.getElementById('taskContainer');
+        const taskAgentSelect = document.getElementById('taskAgent');
+
+        // Event Listeners
+        agentForm.addEventListener('submit', createAgent);
+        taskForm.addEventListener('submit', createTask);
+
+        // Crear un nuevo agente
+        function createAgent(e) {
+            e.preventDefault();
+
+            const agent = {
+                id: state.nextAgentId++,
+                name: document.getElementById('agentName').value,
+                role: document.getElementById('agentRole').value,
+                ability: document.getElementById('agentAbility').value,
+                status: 'idle',
+                createdAt: new Date()
+            };
+
+            state.agents.push(agent);
+            agentForm.reset();
+            updateUI();
+        }
+
+        // Crear una nueva tarea
+        function createTask(e) {
+            e.preventDefault();
+
+            const agentId = parseInt(document.getElementById('taskAgent').value);
+            const agent = state.agents.find(a => a.id === agentId);
+
+            if (!agent) {
+                alert('Por favor selecciona un agente válido');
+                return;
+            }
+
+            const task = {
+                id: state.nextTaskId++,
+                name: document.getElementById('taskName').value,
+                agentId: agentId,
+                priority: document.getElementById('taskPriority').value,
+                progress: 0,
+                status: 'pending',
+                createdAt: new Date()
+            };
+
+            state.tasks.push(task);
+            taskForm.reset();
+            agent.status = 'busy';
+            updateUI();
+        }
+
+        // Eliminar un agente
+        function deleteAgent(id) {
+            if (confirm('¿Estás seguro de que deseas eliminar este agente?')) {
+                state.agents = state.agents.filter(a => a.id !== id);
+                state.tasks = state.tasks.filter(t => t.agentId !== id);
+                updateUI();
+            }
+        }
+
+        // Actualizar progreso de tarea
+        function updateTaskProgress(taskId) {
+            const task = state.tasks.find(t => t.id === taskId);
+            if (task) {
+                task.progress = Math.min(task.progress + 25, 100);
+                if (task.progress === 100) {
+                    task.status = 'completed';
+                    const agent = state.agents.find(a => a.id === task.agentId);
+                    if (agent && !state.tasks.some(t => t.agentId === agent.id && t.status !== 'completed')) {
+                        agent.status = 'idle';
+                    }
+                }
+                updateUI();
+            }
+        }
+
+        // Completar tarea
+        function completeTask(taskId) {
+            const task = state.tasks.find(t => t.id === taskId);
+            if (task) {
+                task.status = 'completed';
+                task.progress = 100;
+                const agent = state.agents.find(a => a.id === task.agentId);
+                if (agent && !state.tasks.some(t => t.agentId === agent.id && t.status !== 'completed')) {
+                    agent.status = 'idle';
+                }
+                updateUI();
+            }
+        }
+
+        // Obtener rol en español
+        function getRoleInSpanish(role) {
+            const roles = {
+                warrior: 'Guerrero',
+                mage: 'Mago',
+                rogue: 'Pícaro',
+                healer: 'Sanador',
+                scout: 'Explorador'
+            };
+            return roles[role] || role;
+        }
+
+        // Obtener color de prioridad
+        function getPriorityColor(priority) {
+            const colors = {
+                low: '#17a2b8',
+                medium: '#ffc107',
+                high: '#fd7e14',
+                critical: '#dc3545'
+            };
+            return colors[priority] || '#667eea';
+        }
+
+        // Actualizar la interfaz
+        function updateUI() {
+            updateAgentSelect();
+            renderAgents();
+            renderTasks();
+            updateStats();
+        }
+
+        // Actualizar select de agentes en formulario de tareas
+        function updateAgentSelect() {
+            const currentValue = taskAgentSelect.value;
+            taskAgentSelect.innerHTML = '<option value="">Selecciona un agente</option>';
+            
+            state.agents.forEach(agent => {
+                const option = document.createElement('option');
+                option.value = agent.id;
+                option.textContent = `${agent.name} (${getRoleInSpanish(agent.role)})`;
+                taskAgentSelect.appendChild(option);
+            });
+
+            taskAgentSelect.value = currentValue;
+        }
+
+        // Renderizar agentes
+        function renderAgents() {
+            if (state.agents.length === 0) {
+                agentContainer.innerHTML = '<div class="empty-state"><p>📭 No hay agentes aún. ¡Crea tu primer agente!</p></div>';
+                return;
+            }
+
+            agentContainer.innerHTML = state.agents.map(agent => {
+                const statusClass = `status-${agent.status}`;
+                const statusText = {
+                    active: 'Activo',
+                    busy: 'Ocupado',
+                    idle: 'Disponible'
+                }[agent.status] || agent.status;
+
+                return `
+                    <div class="agent-card">
+                        <div class="agent-info">
+                            <h3>🧙 ${agent.name}</h3>
+                            <p><strong>Rol:</strong> ${getRoleInSpanish(agent.role)}</p>
+                            <p><strong>Habilidad:</strong> ${agent.ability}</p>
+                            <span class="agent-status ${statusClass}">${statusText}</span>
+                        </div>
+                        <div class="agent-actions">
+                            <button class="btn-small" onclick="state.agents.find(a => a.id === ${agent.id}).status = state.agents.find(a => a.id === ${agent.id}).status === 'idle' ? 'active' : 'idle'; updateUI()">
+                                ${agent.status === 'idle' ? '▶️ Activar' : '⏸️ Pausar'}
+                            </button>
+                            <button class="btn-small btn-delete" onclick="deleteAgent(${agent.id})">🗑️ Eliminar</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Renderizar tareas
+        function renderTasks() {
+            if (state.tasks.length === 0) {
+                taskContainer.innerHTML = '<div class="empty-state"><p>📋 No hay tareas. ¡Asigna una tarea a un agente!</p></div>';
+                return;
+            }
+
+            taskContainer.innerHTML = state.tasks.map(task => {
+                const agent = state.agents.find(a => a.id === task.agentId);
+                const priorityColor = getPriorityColor(task.priority);
+
+                return `
+                    <div class="task-card" style="border-top-color: ${priorityColor};">
+                        <h4>${task.name}</h4>
+                        <div class="task-info">
+                            <p><strong>Agente:</strong> ${agent ? agent.name : 'Desconocido'}</p>
+                            <p><strong>Prioridad:</strong> <span style="color: ${priorityColor}; font-weight: bold;">${task.priority.toUpperCase()}</span></p>
+                            <p><strong>Estado:</strong> ${task.status === 'completed' ? '✅ Completada' : '⏳ ' + (task.status.charAt(0).toUpperCase() + task.status.slice(1))}</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${task.progress}%">${task.progress}%</div>
+                        </div>
+                        <div class="agent-actions">
+                            ${task.status !== 'completed' ? `
+                                <button class="btn-small" onclick="updateTaskProgress(${task.id})">📈 Avanzar</button>
+                                <button class="btn-small" onclick="completeTask(${task.id})">✅ Completar</button>
+                            ` : '<p style="text-align: center; color: #28a745; font-weight: bold;">✅ Tarea Completada</p>'}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Actualizar estadísticas
+        function updateStats() {
+            document.getElementById('totalAgents').textContent = state.agents.length;
+            document.getElementById('activeAgents').textContent = state.agents.filter(a => a.status !== 'idle').length;
+            document.getElementById('totalTasks').textContent = state.tasks.length;
+            document.getElementById('completedTasks').textContent = state.tasks.filter(t => t.status === 'completed').length;
+        }
+
+        // Inicializar
+        updateUI();
+    </script>
+</body>
+</html>
