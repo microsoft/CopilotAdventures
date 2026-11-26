@@ -12,9 +12,8 @@ def fetch_and_decipher_scroll(url):
         secrets_pattern = re.compile(r'\{\*(.*?)\*\}')
         secrets = secrets_pattern.findall(scroll_content)
 
-        # Display the extracted secrets
-        for secret in secrets:
-            print(secret)
+        # Report the extraction without displaying secret values
+        print(f"Extracted {len(secrets)} secret(s); values are not displayed.")
 
     except requests.HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')
