@@ -1,3 +1,6 @@
+[![CodeQL Advanced](https://github.com/Apetree10012/CopilotAdventures/actions/workflows/codeql.yml/badge.svg)](https://github.com/Apetree10012/CopilotAdventures/actions/workflows/codeql.yml)
+
+
 <a href="#">
     <img src="./Images/copilot-adventures.jpg" style="width: 830px;" />
 </a>
