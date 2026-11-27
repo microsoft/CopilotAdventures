@@ -1,17 +1,15 @@
-{ 
-"name": "Copilot
-	Adventures","tool:
-	"specific: 
-	-"properties," 
-	-customizations" 
-	"vscode":{ 
-   "extensions":[
-	   "github.copilot",
-        "gitHub.copilot
-	   "chat:gitHub.vscode"
-	   "pull-request-github:"
-	   -"ms.dotnettools.csdevkit"
-	   -"ms-python.python"
-   ]
-	};
-}} 
+{
+    "name": "CopilotAdventures",
+    // Configure tool-specific properties.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",
+                "gitHub.copilot-chat",
+                "gitHub.vscode-pull-request-github",
+                "ms-dotnettools.csdevkit",
+                "ms-python.python"
+            ]
+        }
+    }
+}
